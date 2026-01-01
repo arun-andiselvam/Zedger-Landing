@@ -1,4 +1,7 @@
+'use client';
+
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   Accordion,
   AccordionContent,
@@ -44,7 +47,7 @@ const AccordionSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
               We will take care of your<br />everything
             </h2>
-            
+
             <Accordion type="single" collapsible defaultValue="anti-loss" className="space-y-2">
               {accordionItems.map((item) => (
                 <AccordionItem
@@ -73,12 +76,14 @@ const AccordionSection = () => {
           >
             {/* Phone Image */}
             <div className="relative mx-auto max-w-[300px]">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=600&fit=crop"
                 alt="Person using phone"
+                width={400}
+                height={600}
                 className="rounded-3xl shadow-2xl"
               />
-              
+
               {/* Floating Cards */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

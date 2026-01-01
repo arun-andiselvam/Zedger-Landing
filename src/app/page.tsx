@@ -8,7 +8,7 @@ import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import DownloadSection from "@/components/landing/DownloadSection";
 import Footer from "@/components/landing/Footer";
 
-const Index = () => {
+export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
@@ -22,6 +22,4 @@ const Index = () => {
       <Footer />
     </main>
   );
-};
-
-export default Index;
+}

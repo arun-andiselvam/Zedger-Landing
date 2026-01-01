@@ -1,6 +1,9 @@
+'use client';
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Users, FolderCheck, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -39,7 +42,7 @@ const HeroSection = () => {
                       <div className="w-8 h-8 bg-primary rounded-full"></div>
                     </div>
                   </div>
-                  
+
                   {/* Stats Card */}
                   <div className="bg-card rounded-2xl p-4 mb-4 shadow-sm">
                     <div className="flex items-center justify-between mb-2">
@@ -48,13 +51,13 @@ const HeroSection = () => {
                     </div>
                     <div className="text-2xl font-bold text-foreground">12</div>
                   </div>
-                  
+
                   {/* Chart Placeholder */}
                   <div className="bg-card rounded-2xl p-4 shadow-sm">
                     <div className="h-24 flex items-end gap-1">
                       {[40, 60, 30, 80, 50, 70, 45].map((h, i) => (
-                        <div 
-                          key={i} 
+                        <div
+                          key={i}
                           className="flex-1 bg-primary/20 rounded-t"
                           style={{ height: `${h}%` }}
                         />
@@ -118,7 +121,7 @@ const HeroSection = () => {
           <div className="bg-card rounded-2xl p-6 shadow-lg">
             <h3 className="text-xl font-bold text-foreground mb-1">Task management</h3>
             <p className="text-muted-foreground mb-6">made simple</p>
-            
+
             <div className="flex gap-8">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -139,7 +142,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            
+
             <Button variant="link" className="mt-4 text-primary p-0 h-auto">
               Learn More <ArrowRight className="w-4 h-4 ml-1" />
             </Button>
@@ -150,19 +153,23 @@ const HeroSection = () => {
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Task like what you see, rarely and is required for your everyday tasks and world events in just a few clicks.
             </p>
-            
+
             {/* Activity Card */}
             <div className="bg-card rounded-2xl p-4 shadow-lg mt-4">
               <div className="flex items-center gap-3 mb-2">
-                <img 
+                <Image
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces"
                   alt="User"
-                  className="w-10 h-10 rounded-full object-cover"
+                  width={40}
+                  height={40}
+                  className="rounded-full object-cover"
                 />
-                <img 
+                <Image
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces"
                   alt="User"
-                  className="w-10 h-10 rounded-full object-cover -ml-4 border-2 border-card"
+                  width={40}
+                  height={40}
+                  className="rounded-full object-cover -ml-4 border-2 border-card"
                 />
               </div>
               <h4 className="font-semibold text-foreground text-sm">Help they be productive</h4>

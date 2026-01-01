@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from "framer-motion";
 
 const DownloadSection = () => {
@@ -16,7 +18,7 @@ const DownloadSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-8">
               Download the epay<br />App today!
             </h2>
-            
+
             {/* App Store Buttons */}
             <div className="flex flex-wrap gap-4">
               <a href="#" className="inline-block">
@@ -62,7 +64,7 @@ const DownloadSection = () => {
                       <span className="text-primary-foreground text-xs">G</span>
                     </div>
                   </div>
-                  
+
                   {/* Calendar */}
                   <div className="bg-card rounded-2xl p-4 mb-4 shadow-sm">
                     <div className="grid grid-cols-7 gap-2 text-center text-xs">
@@ -70,8 +72,8 @@ const DownloadSection = () => {
                         <span key={i} className="text-muted-foreground">{day}</span>
                       ))}
                       {[1, 2, 3, 4, 5, 6, 7].map((date) => (
-                        <span 
-                          key={date} 
+                        <span
+                          key={date}
                           className={`py-1 ${date === 5 ? 'bg-primary text-primary-foreground rounded-full' : 'text-foreground'}`}
                         >
                           {date}
@@ -79,7 +81,7 @@ const DownloadSection = () => {
                       ))}
                     </div>
                   </div>
-                  
+
                   {/* Task List */}
                   <div className="space-y-3">
                     <div className="bg-card rounded-xl p-3 shadow-sm">

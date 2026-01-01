@@ -1,12 +1,15 @@
+'use client';
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import Image from "next/image";
 
 const CTASection = () => {
   return (
     <section className="relative py-32 overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=1920&q=80')"
@@ -25,10 +28,12 @@ const CTASection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=600&fit=crop"
               alt="Phone mockup"
-              className="rounded-3xl shadow-2xl max-w-[280px] mx-auto"
+              width={280}
+              height={420}
+              className="rounded-3xl shadow-2xl mx-auto"
             />
           </motion.div>
 
@@ -46,7 +51,7 @@ const CTASection = () => {
             <p className="text-muted-foreground mb-8 max-w-md">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
-            
+
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-semibold mb-6">
               Book a Demo
             </Button>
