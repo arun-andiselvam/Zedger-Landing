@@ -7,20 +7,19 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-primary min-h-screen pt-24 pb-16 overflow-hidden">
-      <div className="container mx-auto px-6">
+    <section className="relative bg-primary w-full min-h-screen md:min-h-[100svh] pt-24 pb-16 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="max-w-2xl lg:max-w-3xl"
           >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-8">
-              Your<br />
-              everyday<br />
-              tasks,<br />
-              <span className="italic font-normal">automated.</span>
+            <h1 className="text-3xl md:text-4xl lg:text-[3.25rem] font-bold text-primary-foreground lg:leading-[50px] mb-8">
+              Not just expense splitting — shareable ledger books<br />
+              <span className="italic font-normal">for every part of your life.</span>
             </h1>
           </motion.div>
 
@@ -29,58 +28,91 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="relative"
+            className="relative lg:ml-32 xl:ml-40 mt-8 lg:mt-12"
           >
             {/* Main Phone */}
-            <div className="relative z-10 mx-auto max-w-[280px]">
-              <div className="bg-card rounded-[2.5rem] p-3 shadow-2xl">
-                <div className="bg-coca-gray-light rounded-[2rem] p-4 min-h-[400px]">
-                  {/* Phone Header */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-sm font-semibold text-foreground">140</span>
-                    <div className="flex items-center gap-1">
-                      <div className="w-8 h-8 bg-primary rounded-full"></div>
-                    </div>
-                  </div>
-
-                  {/* Stats Card */}
-                  <div className="bg-card rounded-2xl p-4 mb-4 shadow-sm">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-xs text-muted-foreground">Daily Traffic</span>
-                      <span className="text-xs text-green-500">+2.45%</span>
-                    </div>
-                    <div className="text-2xl font-bold text-foreground">12</div>
-                  </div>
-
-                  {/* Chart Placeholder */}
-                  <div className="bg-card rounded-2xl p-4 shadow-sm">
-                    <div className="h-24 flex items-end gap-1">
-                      {[40, 60, 30, 80, 50, 70, 45].map((h, i) => (
-                        <div
-                          key={i}
-                          className="flex-1 bg-primary/20 rounded-t"
-                          style={{ height: `${h}%` }}
-                        />
-                      ))}
-                    </div>
-                  </div>
+            <div className="relative z-10 mx-auto lg:mx-0 max-w-[280px]">
+              <div className="bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
+                {/* Phone notch */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-gray-900 rounded-b-2xl z-10"></div>
+                {/* Phone screen */}
+                <div className="relative rounded-[2rem] overflow-hidden">
+                  <Image
+                    src="/images/zedger-home.png"
+                    alt="Zedger App"
+                    width={280}
+                    height={560}
+                    className="w-full h-auto object-cover"
+                    priority
+                  />
                 </div>
+                {/* Home indicator */}
+                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-28 h-1 bg-white/30 rounded-full"></div>
               </div>
             </div>
 
-            {/* Floating Cards */}
+            {/* Money Collection Card - Top Left */}
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
+              className="hidden md:block absolute top-8 -left-20 lg:-left-28 bg-card rounded-xl p-4 shadow-lg z-20"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <span className="text-sm">💰</span>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-foreground">Office Lunch</p>
+                  <p className="text-[10px] text-muted-foreground">Collection Book</p>
+                </div>
+              </div>
+              <p className="text-lg font-bold text-foreground mb-1">$25.00</p>
+              <p className="text-[10px] text-muted-foreground mb-3">3 pending • Due today</p>
+              <Button size="sm" className="w-full bg-primary text-primary-foreground rounded-full text-xs">
+                Remind
+              </Button>
+            </motion.div>
+
+            {/* Recurring Expense Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="absolute top-20 -right-4 bg-card rounded-xl p-3 shadow-lg"
+              className="hidden md:block absolute top-24 left-48 bg-card rounded-xl p-4 shadow-lg z-20"
             >
-              <p className="text-xs text-muted-foreground mb-1">Task management with the most</p>
-              <p className="text-xs text-muted-foreground">convenient flow at this time, making</p>
-              <p className="text-xs text-muted-foreground">your work easier and simpler.</p>
-              <Button size="sm" className="mt-3 bg-primary text-primary-foreground rounded-full text-xs">
-                Book a Demo
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <span className="text-sm">🏠</span>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-foreground">Room Rent</p>
+                  <p className="text-[10px] text-muted-foreground">Monthly recurring</p>
+                </div>
+              </div>
+              <p className="text-lg font-bold text-foreground mb-2">$850.00</p>
+              <p className="text-[10px] text-muted-foreground mb-3">Due in 3 days</p>
+              <Button size="sm" className="w-full bg-primary text-primary-foreground rounded-full text-xs">
+                Mark as Paid
               </Button>
+            </motion.div>
+
+            {/* Expense Notification Card - Right */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 1.1 }}
+              className="hidden md:block absolute bottom-48 left-48 bg-card rounded-xl p-3 shadow-lg z-20"
+            >
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-orange-400 to-yellow-400 flex items-center justify-center">
+                  <span className="text-xs text-white">🏠</span>
+                </div>
+                <div>
+                  <p className="text-xs font-medium text-foreground">Home Book</p>
+                  <p className="text-[10px] text-muted-foreground">Your wife recorded $100 spent</p>
+                </div>
+              </div>
             </motion.div>
 
             {/* Notification Cards */}
@@ -88,112 +120,38 @@ const HeroSection = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 1 }}
-              className="absolute bottom-40 left-0 space-y-2"
+              className="hidden md:block absolute bottom-40 -left-16 lg:-left-24 xl:-left-28 space-y-2 z-20"
             >
               <div className="bg-card rounded-xl p-3 shadow-lg flex items-center gap-2">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <span className="text-xs">📋</span>
+                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                  <span className="text-xs">✓</span>
                 </div>
                 <div>
-                  <p className="text-xs font-medium text-foreground">Define Timeline Building F...</p>
-                  <p className="text-[10px] text-muted-foreground">In Progress</p>
+                  <p className="text-xs font-medium text-foreground">Sarah settled up</p>
+                  <p className="text-[10px] text-muted-foreground">You received $45.00</p>
                 </div>
               </div>
               <div className="bg-card rounded-xl p-3 shadow-lg flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-400 to-orange-400"></div>
+                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-pink-400 flex items-center justify-center">
+                  <span className="text-xs text-white">🏖️</span>
+                </div>
                 <div>
-                  <p className="text-xs font-medium text-foreground">Managing Prototype</p>
-                  <p className="text-[10px] text-muted-foreground">Task • Marketing</p>
+                  <p className="text-xs font-medium text-foreground">Bali Trip Book</p>
+                  <p className="text-[10px] text-muted-foreground">4 members • $1,250 total</p>
                 </div>
               </div>
             </motion.div>
           </motion.div>
         </div>
 
-        {/* Stats Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-8 grid md:grid-cols-2 gap-6"
-        >
-          {/* Left Stats Card */}
-          <div className="bg-card rounded-2xl p-6 shadow-lg">
-            <h3 className="text-xl font-bold text-foreground mb-1">Task management</h3>
-            <p className="text-muted-foreground mb-6">made simple</p>
-
-            <div className="flex gap-8">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Users className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <p className="text-2xl font-bold text-foreground">450+</p>
-                  <p className="text-xs text-muted-foreground">Active Users</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <FolderCheck className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <p className="text-2xl font-bold text-foreground">80%</p>
-                  <p className="text-xs text-muted-foreground">Projects Done</p>
-                </div>
-              </div>
-            </div>
-
-            <Button variant="link" className="mt-4 text-primary p-0 h-auto">
-              Learn More <ArrowRight className="w-4 h-4 ml-1" />
-            </Button>
-          </div>
-
-          {/* Right Description Card */}
-          <div className="flex flex-col justify-between">
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Task like what you see, rarely and is required for your everyday tasks and world events in just a few clicks.
-            </p>
-
-            {/* Activity Card */}
-            <div className="bg-card rounded-2xl p-4 shadow-lg mt-4">
-              <div className="flex items-center gap-3 mb-2">
-                <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces"
-                  alt="User"
-                  width={40}
-                  height={40}
-                  className="rounded-full object-cover"
-                />
-                <Image
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces"
-                  alt="User"
-                  width={40}
-                  height={40}
-                  className="rounded-full object-cover -ml-4 border-2 border-card"
-                />
-              </div>
-              <h4 className="font-semibold text-foreground text-sm">Help they be productive</h4>
-              <p className="text-xs text-muted-foreground">with activities</p>
-            </div>
-          </div>
-        </motion.div>
-
         {/* Trusted By */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-12"
+          className="mt-8 sm:mt-12"
         >
-          <p className="text-center text-primary-foreground/60 text-sm mb-6">Trusted by 50+ companies</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {['Boltshift', 'Lightbox', 'FeatherDev', 'Spherule', 'GlobalBank', 'Nietzsche'].map((company) => (
-              <div key={company} className="flex items-center gap-2 text-primary-foreground/70">
-                <div className="w-6 h-6 rounded-full border border-primary-foreground/30"></div>
-                <span className="text-sm font-medium">{company}</span>
-              </div>
-            ))}
-          </div>
+          <p className="text-center text-primary-foreground/60 text-sm">Trusted by 50+ Companies</p>
         </motion.div>
       </div>
     </section>

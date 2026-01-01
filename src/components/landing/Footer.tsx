@@ -8,9 +8,9 @@ const Footer = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">C</span>
+              <span className="text-primary-foreground font-bold text-sm">Z</span>
             </div>
-            <span className="text-foreground font-bold text-xl">coca</span>
+            <span className="text-foreground font-bold text-xl">Zedger</span>
           </div>
 
           {/* Links */}
@@ -45,7 +45,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Coca. All Rights Reserved</p>
+          <p>&copy; {new Date().getFullYear()} Zedger. All Rights Reserved</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-foreground transition-colors">Term & Condition</a>

@@ -15,7 +15,7 @@ const AccessSection = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Your access<br />anytime, anywhere
+              Access your books<br />anytime, anywhere
             </h2>
           </motion.div>
 
@@ -27,7 +27,7 @@ const AccessSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-muted-foreground leading-relaxed">
-              When you want to connect with clients. You will get all the facilities from the best management app.
+              Whether you're at home, traveling, or on the go — your shared expense books are always just a tap away. Real-time sync keeps everyone updated.
             </p>
           </motion.div>
         </div>

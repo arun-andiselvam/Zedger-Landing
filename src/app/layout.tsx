@@ -2,26 +2,26 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://coca.app'),
+  metadataBase: new URL('https://zedger.app'),
   title: {
-    default: 'Coca - Your Everyday Tasks, Automated',
-    template: '%s | Coca',
+    default: 'Zedger - Shareable Ledger Books for Every Part of Your Life',
+    template: '%s | Zedger',
   },
   description:
-    'Coca helps you automate your everyday tasks with smart task management. Join 450+ active users who trust Coca for seamless productivity and project management.',
+    'Zedger is the first app with shareable ledger books. Track expenses with family, friends, and roommates. Family books, trip books, recurring expenses, and more.',
   keywords: [
-    'task management',
-    'productivity',
-    'automation',
-    'project management',
-    'team collaboration',
-    'workflow automation',
-    'task tracking',
-    'coca app',
+    'expense tracking',
+    'shared expenses',
+    'expense splitting',
+    'ledger books',
+    'family expenses',
+    'trip expenses',
+    'roommate expenses',
+    'zedger app',
   ],
-  authors: [{ name: 'Coca Team' }],
-  creator: 'Coca',
-  publisher: 'Coca',
+  authors: [{ name: 'Zedger Team' }],
+  creator: 'Zedger',
+  publisher: 'Zedger',
   formatDetection: {
     email: false,
     address: false,
@@ -30,27 +30,27 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://coca.app',
-    siteName: 'Coca',
-    title: 'Coca - Your Everyday Tasks, Automated',
+    url: 'https://zedger.app',
+    siteName: 'Zedger',
+    title: 'Zedger - Shareable Ledger Books for Every Part of Your Life',
     description:
-      'Coca helps you automate your everyday tasks with smart task management. Join 450+ active users who trust Coca.',
+      'Zedger is the first app with shareable ledger books. Track expenses with family, friends, and roommates.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Coca - Task Management Made Simple',
+        alt: 'Zedger - Shareable Ledger Books',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Coca - Your Everyday Tasks, Automated',
+    title: 'Zedger - Shareable Ledger Books for Every Part of Your Life',
     description:
-      'Coca helps you automate your everyday tasks with smart task management.',
+      'Zedger is the first app with shareable ledger books. Track expenses with family, friends, and roommates.',
     images: ['/og-image.png'],
-    creator: '@cocaapp',
+    creator: '@zedgerapp',
   },
   robots: {
     index: true,
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://coca.app',
+    canonical: 'https://zedger.app',
   },
 };
 

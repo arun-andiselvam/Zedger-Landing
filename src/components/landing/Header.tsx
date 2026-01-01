@@ -16,9 +16,9 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary-foreground rounded-full flex items-center justify-center">
-              <span className="text-primary font-bold text-sm">C</span>
+              <span className="text-primary font-bold text-sm">Z</span>
             </div>
-            <span className="text-primary-foreground font-bold text-xl">coca</span>
+            <span className="text-primary-foreground font-bold text-xl">Zedger</span>
           </div>
 
           {/* Navigation Links */}

@@ -1,23 +1,28 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { Users, Shield, MessageCircle } from "lucide-react";
+import { Home, Plane, Calendar, Heart } from "lucide-react";
 
 const features = [
   {
-    icon: Users,
-    title: "Team Accounts",
-    description: "When you want to connect with clients. You will get all the features from the best management app."
+    icon: Home,
+    title: "Family Book",
+    description: "A shared ledger for your family. Track household expenses together and keep everyone informed in real-time."
   },
   {
-    icon: Shield,
-    title: "Top Notch Secured",
-    description: "We ensure that high quality and low-risk guarantees for your security. We will keep you everything you have."
+    icon: Plane,
+    title: "Trip Book",
+    description: "Plan trips with friends without the hassle. Record expenses, split costs fairly, and settle up easily after the adventure."
   },
   {
-    icon: MessageCircle,
-    title: "Engage Customers",
-    description: "To earn more attractive customers on your business where you don't have to browse more."
+    icon: Calendar,
+    title: "Recurring Expenses Book",
+    description: "Share recurring expenses with roommates or friends. Track rent, utilities, and subscriptions with automatic monthly splitting."
+  },
+  {
+    icon: Heart,
+    title: "Fundraising Book",
+    description: "Collect money for events, gifts, or causes. Track contributions and keep everyone informed transparently."
   }
 ];
 
@@ -25,7 +30,7 @@ const FeaturesSection = () => {
   return (
     <section className="py-20 bg-coca-gray-light">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
