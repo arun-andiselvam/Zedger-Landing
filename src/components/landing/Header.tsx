@@ -21,8 +21,8 @@ const Header = () => {
             <span className="text-primary-foreground font-bold text-xl">Zedger</span>
           </div>
 
-          {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Navigation Links - Hidden for now */}
+          {/* <div className="hidden md:flex items-center gap-8">
             <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
               Blog
             </a>
@@ -35,17 +35,17 @@ const Header = () => {
             <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
               Help Center
             </a>
-          </div>
+          </div> */}
 
-          {/* Auth Buttons */}
-          <div className="flex items-center gap-3">
+          {/* Auth Buttons - Hidden for now */}
+          {/* <div className="flex items-center gap-3">
             <Button variant="ghost" className="text-primary-foreground hover:text-primary-foreground hover:bg-primary-foreground/10">
               Login
             </Button>
             <Button className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-full px-6">
               Sign Up
             </Button>
-          </div>
+          </div> */}
         </nav>
       </div>
     </motion.header>
