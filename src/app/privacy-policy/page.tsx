@@ -176,7 +176,7 @@ export default function PrivacyPolicy() {
             </p>
             <div className="bg-gray-50 rounded-lg p-4">
               <p className="text-gray-700 font-medium">Zedger Support</p>
-              <p className="text-gray-600">Email: <a href="mailto:support@zedger.app" className="text-primary hover:underline">support@zedger.app</a></p>
+              <p className="text-gray-600">Email: <a href="mailto:info@tryzedger.com" className="text-primary hover:underline">info@tryzedger.com</a></p>
             </div>
           </section>
         </div>

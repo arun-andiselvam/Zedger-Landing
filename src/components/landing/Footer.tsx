@@ -18,22 +18,6 @@ const Footer = () => {
             <span className="text-foreground font-bold text-xl">Zedger</span>
           </div>
 
-          {/* Links */}
-          <nav className="flex flex-wrap justify-center gap-6">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-              Blog
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-              About
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-              Community
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-              Help Center
-            </a>
-          </nav>
-
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -53,7 +37,7 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} Zedger. All Rights Reserved</p>
           <div className="flex gap-6">
             <a href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Term & Condition</a>
+            <a href="/terms-and-conditions" className="hover:text-foreground transition-colors">Terms & Conditions</a>
           </div>
         </div>
       </div>
