@@ -1,22 +1,24 @@
 'use client';
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const DownloadSection = () => {
   return (
-    <section className="py-20 bg-primary relative overflow-hidden">
+    <section className="pt-24 pb-0 bg-primary relative overflow-visible">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 items-start">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="flex flex-col justify-center pt-16"
           >
-            <p className="text-primary-foreground/70 text-sm mb-2">Want your fast, easy, & secure?</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-8">
-              Download the epay<br />App today!
+            <p className="text-primary-foreground/70 text-sm mb-1">Split expenses with ease</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+              Download Zedger<br />App today!
             </h2>
 
             {/* App Store Buttons */}
@@ -24,7 +26,7 @@ const DownloadSection = () => {
               <a href="#" className="inline-block">
                 <div className="bg-foreground text-background rounded-lg px-5 py-2 flex items-center gap-3 hover:opacity-90 transition-opacity">
                   <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.5,1.25a.5.5,0,0,1,.5.5V3h1.25a.5.5,0,0,1,.5.5V4a.5.5,0,0,1-.5.5H18V5.75a.5.5,0,0,1-.5.5H17a.5.5,0,0,1-.5-.5V4.5H15.25A.5.5,0,0,1,14.75,4V3.5a.5.5,0,0,1,.5-.5H16.5V1.75a.5.5,0,0,1,.5-.5ZM12,2C6.477,2,2,6.477,2,12s4.477,10,10,10,10-4.477,10-10c0-1.564-.36-3.042-1-4.357V7.5A.5.5,0,0,0,20.5,7H18.15c-.126-.175-.26-.344-.4-.508V4.5a.5.5,0,0,0-.5-.5H15.857A9.959,9.959,0,0,0,12,2Zm0,2a8,8,0,1,1-8,8A8.009,8.009,0,0,1,12,4ZM7.5,8.5,12,17l4.5-8.5Z"/>
+                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                   </svg>
                   <div>
                     <p className="text-[10px] opacity-80">GET IT ON</p>
@@ -52,48 +54,17 @@ const DownloadSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative flex justify-center"
+            className="relative flex justify-center h-[336px]"
           >
-            <div className="relative">
-              <div className="bg-card rounded-[2.5rem] p-3 shadow-2xl max-w-[280px]">
-                <div className="bg-coca-gray-light rounded-[2rem] p-4 min-h-[400px]">
-                  {/* Phone Content */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-lg font-bold text-foreground">My Task</span>
-                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                      <span className="text-primary-foreground text-xs">G</span>
-                    </div>
-                  </div>
-
-                  {/* Calendar */}
-                  <div className="bg-card rounded-2xl p-4 mb-4 shadow-sm">
-                    <div className="grid grid-cols-7 gap-2 text-center text-xs">
-                      {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, i) => (
-                        <span key={i} className="text-muted-foreground">{day}</span>
-                      ))}
-                      {[1, 2, 3, 4, 5, 6, 7].map((date) => (
-                        <span
-                          key={date}
-                          className={`py-1 ${date === 5 ? 'bg-primary text-primary-foreground rounded-full' : 'text-foreground'}`}
-                        >
-                          {date}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Task List */}
-                  <div className="space-y-3">
-                    <div className="bg-card rounded-xl p-3 shadow-sm">
-                      <p className="text-xs font-medium text-foreground">Complete UI for Booking App</p>
-                      <p className="text-[10px] text-muted-foreground mt-1">Today • 2:00 PM</p>
-                    </div>
-                    <div className="bg-card rounded-xl p-3 shadow-sm">
-                      <p className="text-xs font-medium text-foreground">Client Meeting</p>
-                      <p className="text-[10px] text-muted-foreground mt-1">Tomorrow • 10:00 AM</p>
-                    </div>
-                  </div>
-                </div>
+            <div className="absolute top-0 bg-gray-900 rounded-[2rem] p-1.5 shadow-2xl">
+              <div className="rounded-[1.5rem] overflow-hidden">
+                <Image
+                  src="/images/for-freidns.png"
+                  alt="Zedger App - Share with Friends"
+                  width={210}
+                  height={370}
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </div>
           </motion.div>

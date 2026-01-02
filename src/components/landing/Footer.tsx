@@ -2,7 +2,7 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-background border-t border-border py-12">
+    <footer className="bg-white border-t border-border py-32 relative z-20 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
@@ -51,6 +51,13 @@ const Footer = () => {
             <a href="#" className="hover:text-foreground transition-colors">Term & Condition</a>
           </div>
         </div>
+      </div>
+
+      {/* Large Brand Text */}
+      <div className="absolute bottom-0 left-0 right-0 flex justify-center pointer-events-none select-none translate-y-[20%]">
+        <span className="text-[4rem] md:text-[7rem] lg:text-[10rem] font-bold text-slate-200 whitespace-nowrap italic">
+          Zedger
+        </span>
       </div>
     </footer>
   );

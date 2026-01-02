@@ -45,7 +45,7 @@ const AccordionSection = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              One book format won't fit<br />for all expenses, you need a <span className="italic font-normal">superapp.</span>
+              One book format won&apos;t fit<br />for all expenses, you need a <span className="italic font-normal">superapp.</span>
             </h2>
 
             <Accordion type="single" collapsible defaultValue="book-types" className="space-y-2">
