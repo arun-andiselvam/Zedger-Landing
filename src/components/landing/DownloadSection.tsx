@@ -56,13 +56,13 @@ const DownloadSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative flex justify-center h-[336px]"
           >
-            <div className="absolute top-0 bg-gray-900 rounded-[2rem] p-1.5 shadow-2xl">
-              <div className="rounded-[1.5rem] overflow-hidden">
+            <div className="absolute top-0 bg-gray-900 rounded-[1.5rem] p-1 shadow-2xl w-[250px]">
+              <div className="rounded-[1.25rem] overflow-hidden">
                 <Image
                   src="/images/for-freidns.png"
                   alt="Zedger App - Share with Friends"
-                  width={210}
-                  height={370}
+                  width={147}
+                  height={259}
                   className="w-full h-auto object-cover"
                 />
               </div>
