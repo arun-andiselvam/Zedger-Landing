@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -7,9 +8,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">Z</span>
-            </div>
+            <Image
+              src="/images/logo2.png"
+              alt="Zedger Logo"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
             <span className="text-foreground font-bold text-xl">Zedger</span>
           </div>
 
