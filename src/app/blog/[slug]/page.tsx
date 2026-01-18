@@ -182,7 +182,7 @@ export default async function BlogPostPage({ params }: Props) {
           )}
 
           {/* Content */}
-          <div className="prose prose-base max-w-none prose-p:leading-relaxed prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-strong:text-foreground prose-code:text-primary prose-code:bg-coca-gray-light prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-li:text-muted-foreground prose-table:w-full prose-table:border-collapse prose-th:border prose-th:border-gray-200 prose-th:bg-coca-gray-light prose-th:px-4 prose-th:py-2 prose-th:text-left prose-th:text-foreground prose-th:font-semibold prose-td:border prose-td:border-gray-200 prose-td:px-4 prose-td:py-2 prose-td:text-muted-foreground">
+          <div className="prose prose-base max-w-none prose-p:leading-relaxed prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-strong:text-foreground prose-code:text-primary prose-code:bg-coca-gray-light prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-li:text-muted-foreground overflow-x-auto">
             <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
 

@@ -461,55 +461,57 @@ const PricingContent = () => {
                 transition={{ duration: 0.5, delay: catIndex * 0.1 }}
               >
                 <h3 className="text-lg font-semibold text-foreground mb-4">{category.title}</h3>
-                <div className="bg-coca-gray-light rounded-xl overflow-hidden">
-                  <div className="grid grid-cols-4 bg-gray-100 border-b border-gray-200">
-                    <div className="p-4 font-medium text-foreground">Feature</div>
-                    <div className="p-4 font-medium text-foreground text-center">Free</div>
-                    <div className="p-4 font-medium text-primary text-center flex items-center justify-center gap-1">
-                      Pro <Crown className="w-4 h-4 text-yellow-500" />
+                <div className="overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
+                  <div className="bg-coca-gray-light rounded-xl overflow-hidden min-w-[500px]">
+                    <div className="grid grid-cols-4 bg-gray-100 border-b border-gray-200">
+                      <div className="p-3 md:p-4 font-medium text-foreground text-sm">Feature</div>
+                      <div className="p-3 md:p-4 font-medium text-foreground text-center text-sm">Free</div>
+                      <div className="p-3 md:p-4 font-medium text-primary text-center flex items-center justify-center gap-1 text-sm">
+                        Pro <Crown className="w-4 h-4 text-yellow-500" />
+                      </div>
+                      <div className="p-3 md:p-4 font-medium text-blue-600 text-center flex items-center justify-center gap-1 text-sm">
+                        VIP <Gem className="w-4 h-4 text-blue-500" />
+                      </div>
                     </div>
-                    <div className="p-4 font-medium text-blue-600 text-center flex items-center justify-center gap-1">
-                      VIP <Gem className="w-4 h-4 text-blue-500" />
-                    </div>
+                    {category.features.map((feature, index) => (
+                      <div key={index} className="grid grid-cols-4 border-b border-gray-100 last:border-b-0">
+                        <div className="p-3 md:p-4 text-sm text-foreground">{feature.name}</div>
+                        <div className="p-3 md:p-4 text-center">
+                          {typeof feature.free === "boolean" ? (
+                            feature.free ? (
+                              <Check className="w-5 h-5 text-green-500 mx-auto" />
+                            ) : (
+                              <X className="w-5 h-5 text-gray-300 mx-auto" />
+                            )
+                          ) : (
+                            <span className="text-xs md:text-sm text-muted-foreground">{feature.free}</span>
+                          )}
+                        </div>
+                        <div className="p-3 md:p-4 text-center">
+                          {typeof feature.pro === "boolean" ? (
+                            feature.pro ? (
+                              <Check className="w-5 h-5 text-green-500 mx-auto" />
+                            ) : (
+                              <X className="w-5 h-5 text-gray-300 mx-auto" />
+                            )
+                          ) : (
+                            <span className="text-xs md:text-sm text-foreground">{feature.pro}</span>
+                          )}
+                        </div>
+                        <div className="p-3 md:p-4 text-center">
+                          {typeof feature.vip === "boolean" ? (
+                            feature.vip ? (
+                              <Check className="w-5 h-5 text-green-500 mx-auto" />
+                            ) : (
+                              <X className="w-5 h-5 text-gray-300 mx-auto" />
+                            )
+                          ) : (
+                            <span className="text-xs md:text-sm text-foreground font-medium">{feature.vip}</span>
+                          )}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  {category.features.map((feature, index) => (
-                    <div key={index} className="grid grid-cols-4 border-b border-gray-100 last:border-b-0">
-                      <div className="p-4 text-sm text-foreground">{feature.name}</div>
-                      <div className="p-4 text-center">
-                        {typeof feature.free === "boolean" ? (
-                          feature.free ? (
-                            <Check className="w-5 h-5 text-green-500 mx-auto" />
-                          ) : (
-                            <X className="w-5 h-5 text-gray-300 mx-auto" />
-                          )
-                        ) : (
-                          <span className="text-sm text-muted-foreground">{feature.free}</span>
-                        )}
-                      </div>
-                      <div className="p-4 text-center">
-                        {typeof feature.pro === "boolean" ? (
-                          feature.pro ? (
-                            <Check className="w-5 h-5 text-green-500 mx-auto" />
-                          ) : (
-                            <X className="w-5 h-5 text-gray-300 mx-auto" />
-                          )
-                        ) : (
-                          <span className="text-sm text-foreground">{feature.pro}</span>
-                        )}
-                      </div>
-                      <div className="p-4 text-center">
-                        {typeof feature.vip === "boolean" ? (
-                          feature.vip ? (
-                            <Check className="w-5 h-5 text-green-500 mx-auto" />
-                          ) : (
-                            <X className="w-5 h-5 text-gray-300 mx-auto" />
-                          )
-                        ) : (
-                          <span className="text-sm text-foreground font-medium">{feature.vip}</span>
-                        )}
-                      </div>
-                    </div>
-                  ))}
                 </div>
               </motion.div>
             ))}
