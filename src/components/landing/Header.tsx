@@ -51,13 +51,16 @@ const Header = () => {
                 </a>
               </div>
             </div>
-            <a href="#features" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
+            <a href="/features" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
               Features
             </a>
-            <a href="#pricing" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
+            <a href="/pricing" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
               Pricing
             </a>
-            <a href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
+            <a href="/blog" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
+              Blog
+            </a>
+            <a href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
               Contact Us
             </a>
           </div>

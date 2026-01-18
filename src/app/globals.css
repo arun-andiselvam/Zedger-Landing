@@ -63,8 +63,32 @@
   * {
     @apply border-border;
   }
+  html, body {
+    overscroll-behavior: none;
+  }
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
+}
+
+/* Blog table styles */
+.prose table {
+  @apply w-full border-collapse my-6 text-sm;
+}
+
+.prose thead {
+  @apply bg-coca-gray-light;
+}
+
+.prose th {
+  @apply border border-gray-200 px-4 py-3 text-left font-semibold text-foreground;
+}
+
+.prose td {
+  @apply border border-gray-200 px-4 py-3 text-muted-foreground;
+}
+
+.prose tbody tr:hover {
+  @apply bg-gray-50;
 }

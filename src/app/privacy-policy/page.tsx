@@ -3,7 +3,37 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy Policy for Zedger - Learn how we collect, use, and protect your personal information.",
+  description:
+    "Privacy Policy for Zedger - Learn how we collect, use, and protect your personal information when using our shared expense tracking app.",
+  keywords: [
+    "zedger privacy policy",
+    "expense app privacy",
+    "data protection",
+    "user privacy",
+  ],
+  openGraph: {
+    title: "Privacy Policy | Zedger",
+    description:
+      "Learn how Zedger collects, uses, and protects your personal information.",
+    url: "https://tryzedger.com/privacy-policy",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Zedger Privacy Policy",
+      },
+    ],
+  },
+  twitter: {
+    title: "Privacy Policy | Zedger",
+    description:
+      "Learn how Zedger collects, uses, and protects your personal information.",
+    images: ["/og-image.png"],
+  },
+  alternates: {
+    canonical: "https://tryzedger.com/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicy() {
