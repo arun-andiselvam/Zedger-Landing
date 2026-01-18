@@ -80,7 +80,7 @@ const ContactContent = () => {
                 Message Sent!
               </h2>
               <p className="text-muted-foreground">
-                Thank you for reaching out. We'll get back to you soon.
+                Thank you for reaching out. We&apos;ll get back to you soon.
               </p>
             </div>
           ) : (
