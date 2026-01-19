@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 const ContactContent = () => {
   const [formData, setFormData] = useState({
@@ -33,17 +34,17 @@ const ContactContent = () => {
     setError("");
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      await emailjs.send(
+        "service_rt1kjax",
+        "template_buyeeug",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          reason: formData.reason,
+          message: formData.message,
         },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to send message");
-      }
+        "9qjkG7GbBd5MksCZn"
+      );
 
       setSubmitted(true);
     } catch {
