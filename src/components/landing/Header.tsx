@@ -31,8 +31,8 @@ const Header = () => {
       transition={{ duration: 0.5 }}
       className="fixed top-0 left-0 right-0 z-50 bg-primary"
     >
-      <div className="container mx-auto px-6 py-5">
-        <nav className="flex items-center justify-between md:justify-center relative h-12">
+      <div className="container mx-auto px-6 py-3">
+        <nav className="flex items-center justify-between md:justify-center relative h-10">
           {/* Logo */}
           <Link href="/" className="md:absolute md:left-0 flex items-center gap-2 h-full">
             <Image
