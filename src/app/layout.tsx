@@ -4,12 +4,18 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://tryzedger.com'),
   title: {
-    default: 'Zedger - Shareable Ledger Books for Every Part of Your Life',
+    default: 'Zedger - Best Group Expense App | Track & Share Expenses with Friends',
     template: '%s | Zedger',
   },
   description:
-    'Zedger is the first app with shareable ledger books. Track expenses with family, friends, and roommates. Family books, trip books, recurring expenses, and more.',
+    'Zedger is the best group expense app with shareable ledger books. The ultimate group expense tracker to track expenses with friends, family, and roommates. Best app for sharing expenses.',
   keywords: [
+    'group expense app',
+    'best app for sharing expenses',
+    'group expense tracker',
+    'app to track expenses with friends',
+    'group expense tracker app',
+    'best app for shared expenses',
     'expense tracking',
     'shared expenses',
     'expense splitting',
@@ -18,7 +24,6 @@ export const metadata: Metadata = {
     'trip expenses',
     'roommate expenses',
     'zedger app',
-    'shared ledger app',
   ],
   authors: [{ name: 'Zedger Team' }],
   creator: 'Zedger',
@@ -33,9 +38,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://tryzedger.com',
     siteName: 'Zedger',
-    title: 'Zedger - Shareable Ledger Books for Every Part of Your Life',
+    title: 'Zedger - Best Group Expense App | Track & Share Expenses with Friends',
     description:
-      'Zedger is the first app with shareable ledger books. Track expenses with family, friends, and roommates.',
+      'Zedger is the best group expense app to track expenses with friends, family, and roommates. The ultimate group expense tracker with shareable ledger books.',
     images: [
       {
         url: '/og-image.png',
@@ -47,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zedger - Shareable Ledger Books for Every Part of Your Life',
+    title: 'Zedger - Best Group Expense App | Track & Share Expenses with Friends',
     description:
-      'Zedger is the first app with shareable ledger books. Track expenses with family, friends, and roommates.',
+      'Zedger is the best group expense app to track expenses with friends, family, and roommates. The ultimate group expense tracker.',
     images: ['/og-image.png'],
     creator: '@zedgerapp',
   },
@@ -99,7 +104,7 @@ const jsonLd = {
       name: 'Zedger',
       applicationCategory: 'FinanceApplication',
       operatingSystem: 'Android, iOS',
-      description: 'Shareable ledger books for families, friends, and roommates. Track expenses together with ease.',
+      description: 'The best group expense app with shareable ledger books. Track expenses with friends, family, and roommates effortlessly.',
       offers: {
         '@type': 'Offer',
         price: '0',
@@ -122,6 +127,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KM4S3M53');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -134,7 +150,19 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KM4S3M53"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
+        {children}
+      </body>
     </html>
   );
 }

@@ -79,10 +79,10 @@ const MonthlyRecurringBookContent = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Your Household&apos;s Financial Autopilot
+              Your Rent and Utility Tracker on Autopilot
             </h2>
             <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
-              The Monthly Recurring Book is designed for people who share regular expenses — rent, utilities, WiFi, groceries, or anything that repeats monthly.
+              This monthly expense manager is designed for people who share regular expenses — rent, utilities, WiFi, groceries, or anything that repeats monthly.
             </p>
             <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed mt-4">
               Instead of calculating who owes whom at the end of every month, the app does it for you. <span className="text-foreground font-medium">Automatically. Fairly. Without the drama.</span>
@@ -125,7 +125,7 @@ const MonthlyRecurringBookContent = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Three Steps to Expense Peace
+              Three Steps to Automated Bill Splitting
             </h2>
           </motion.div>
 
@@ -189,10 +189,10 @@ const MonthlyRecurringBookContent = () => {
             className="text-center mb-4"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Split Your Way
+              The Roommate Bill Splitter That Adapts
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Not every expense should be split equally. We get it.
+              Not every expense should be split equally. Our roommate bill splitter gets it.
             </p>
           </motion.div>
 
@@ -254,7 +254,7 @@ const MonthlyRecurringBookContent = () => {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Getting Everyone on the Same Page
+                The Best App to Split Bills with Roommates
               </h2>
 
               <div className="space-y-4">
@@ -342,7 +342,7 @@ const MonthlyRecurringBookContent = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Fresh Start, Every Month
+              Monthly Expense Manager — Fresh Start Every Month
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Each month is a clean slate. At the start of your cycle, everyone&apos;s balance resets to zero. As expenses are logged throughout the month, the app calculates who&apos;s ahead and who&apos;s behind.
@@ -466,7 +466,7 @@ const MonthlyRecurringBookContent = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Everything You Need, Nothing You Don&apos;t
+              Your Complete Apartment Expense Ledger
             </h2>
           </motion.div>
 
@@ -511,15 +511,15 @@ const MonthlyRecurringBookContent = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Quick Answers
+              Bill Splitting App for Roommates - FAQ
             </h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
               {
-                q: "What exactly is a Monthly Recurring Book?",
-                a: "It's a shared expense tracker designed for people who split regular costs — like rent, utilities, groceries, or WiFi. The app automatically calculates who owes what at the end of each month, so you don't have to."
+                q: "What is a bill splitting app for roommates?",
+                a: "A bill splitting app for roommates like Zedger is a shared expense tracker designed for people who split regular costs — like rent, utilities, groceries, or WiFi. This automated bill splitting app calculates who owes what at the end of each month, so you don't have to."
               },
               {
                 q: "Who is this for?",
@@ -638,8 +638,8 @@ const MonthlyRecurringBookContent = () => {
                 a: "Yes. Settle your balance first, then leave. The book continues for remaining members."
               },
               {
-                q: "Is Monthly Recurring Book free?",
-                a: "Yes, core features are free. Pro unlocks unlimited members, advanced analytics, and priority support."
+                q: "Is this bill splitting app for roommates free?",
+                a: "Yes, this roommate bill splitter is free with all core features. Pro unlocks unlimited members, advanced analytics, and priority support — making it the best app to split bills with roommates for larger households."
               }
             ].map((item, index) => (
               <motion.div
@@ -681,13 +681,13 @@ const MonthlyRecurringBookContent = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-              Stop Chasing. Start Tracking.
+              Download the Best Bill Splitting App for Roommates
             </h2>
             <p className="text-primary-foreground/80 mb-2">
-              The average person spends 3 hours a month sorting out shared expenses. That&apos;s 36 hours a year — gone.
+              Stop chasing payments. This automated bill splitting app handles rent, utilities, and shared subscriptions effortlessly.
             </p>
             <p className="text-primary-foreground font-medium mb-8">
-              Take it back.
+              The ultimate shared subscription tracker for roommates.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-6">
               <a href="https://play.google.com/store/apps/details?id=com.hitasoft.zedger" target="_blank" rel="noopener noreferrer" className="inline-block">
@@ -714,7 +714,7 @@ const MonthlyRecurringBookContent = () => {
               </a>
             </div>
             <p className="text-primary-foreground/60 text-sm">
-              Join thousands of roommates and flatmates who stopped arguing about money.
+              Join thousands using the best app to split bills with roommates — your apartment expense ledger awaits.
             </p>
           </motion.div>
         </div>

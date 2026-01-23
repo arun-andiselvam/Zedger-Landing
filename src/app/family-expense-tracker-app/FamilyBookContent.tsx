@@ -64,10 +64,10 @@ const FamilyBookContent = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              One Book. Every Penny. Zero Arguments.
+              One Family Expense Tracker. Every Penny. Zero Arguments.
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A shared ledger from <Link href="/" className="text-primary underline underline-offset-2 hover:text-primary/80">Zedger</Link> your whole family can trust
+              The best expense tracking app for family from <Link href="/" className="text-primary underline underline-offset-2 hover:text-primary/80">Zedger</Link> — trusted by thousands of households
             </p>
           </motion.div>
 
@@ -119,7 +119,7 @@ const FamilyBookContent = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Built for How Families Actually Manage Money
+              A Family Expense Manager App Built for Real Families
             </h2>
           </motion.div>
 
@@ -273,10 +273,10 @@ const FamilyBookContent = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Not a Budget App. Not a Banking App.
+              Not a Budget App. The Best Family Expense Tracker App.
             </h2>
             <p className="text-muted-foreground">
-              <Link href="/" className="text-primary underline underline-offset-2 hover:text-primary/80">Zedger</Link> is a shared ledger app — a different category entirely.
+              <Link href="/" className="text-primary underline underline-offset-2 hover:text-primary/80">Zedger</Link> is an expense tracking app for family — a different category entirely.
             </p>
           </motion.div>
 
@@ -323,19 +323,19 @@ const FamilyBookContent = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Quick Answers
+              Family Expense Tracker App - FAQ
             </h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
               {
-                q: "What exactly is a Family Book?",
-                a: "Think of it as a digital version of that old notebook families used to keep for household accounts. It's a shared space where family members can log income, expenses, and transfers — and everyone sees the same updated picture of the family finances."
+                q: "What is a family expense tracker app?",
+                a: "A family expense tracker app like Zedger is a digital version of that old notebook families used to keep for household accounts. It's a shared space where family members can log income, expenses, and transfers — and everyone sees the same updated picture of the family finances."
               },
               {
-                q: "How is this different from a personal expense tracker?",
-                a: "Personal trackers are for your money. Family Book is for our money. Multiple family members can add entries, view balances, and track where the household money is going — together."
+                q: "How is this different from other expense tracking apps for family?",
+                a: "Most expense tracking apps for family focus on individual tracking. Zedger's Family Book is built for shared household money. Multiple family members can add entries, view balances, and track where the household money is going — together."
               },
               {
                 q: "Who can see the entries I add?",
@@ -410,8 +410,8 @@ const FamilyBookContent = () => {
                 a: "Yes. Export your Family Book data anytime for record-keeping, tax purposes, or offline review."
               },
               {
-                q: "Is Family Book free?",
-                a: "Yes, the core features are free. Pro unlocks advanced features like unlimited members, detailed analytics, and priority support."
+                q: "Is this family expense tracker app free?",
+                a: "Yes, Zedger is a family expense tracker app free to use with all core features. Pro unlocks advanced features like unlimited members, detailed analytics, and priority support — making it the best family expense tracker app for larger households."
               }
             ].map((item, index) => (
               <motion.div
@@ -453,10 +453,10 @@ const FamilyBookContent = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-              Start Your Family&apos;s Financial Chapter
+              Download the Best Family Expense Tracker App Free
             </h2>
             <p className="text-primary-foreground/80 mb-8">
-              Join 10,000+ families using <Link href="/" className="underline underline-offset-2 hover:text-primary-foreground">Zedger</Link> — the simplest shared ledger app
+              Join 10,000+ families using <Link href="/" className="underline underline-offset-2 hover:text-primary-foreground">Zedger</Link> — the family expense tracker app free for everyone
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="https://play.google.com/store/apps/details?id=com.hitasoft.zedger" target="_blank" rel="noopener noreferrer" className="inline-block">

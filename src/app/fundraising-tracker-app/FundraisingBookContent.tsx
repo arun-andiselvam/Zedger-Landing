@@ -494,10 +494,10 @@ export default function FundraisingBookContent() {
           >
             <motion.div variants={fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Your Personal Collection Manager
+                Your Personal Fundraising Goal Tracker
               </h2>
               <p className="text-lg text-gray-600 mb-4">
-                Money Collection Book is built for one thing: collecting a fixed amount from a
+                This fundraising tracker app is built for one thing: collecting a fixed amount from a
                 group of people.
               </p>
               <p className="text-lg text-gray-600">
@@ -513,7 +513,7 @@ export default function FundraisingBookContent() {
 
             <motion.div variants={fadeInUp}>
               <h3 className="text-xl font-semibold text-gray-900 text-center mb-8">
-                Perfect for:
+                This event planning budget tracker is perfect for:
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {perfectFor.map((item, index) => (
@@ -587,10 +587,10 @@ export default function FundraisingBookContent() {
           >
             <motion.div variants={fadeInUp} className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Flexible Collections for Every Situation
+                Fundraising Tracker App for Every Situation
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Every collection is different. The app adapts to yours.
+                Every collection is different. This fundraising goal tracker adapts to yours.
               </p>
             </motion.div>
 
@@ -1073,10 +1073,10 @@ export default function FundraisingBookContent() {
           >
             <motion.div variants={fadeInUp} className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Quick Answers
+                Fundraising Tracker App - FAQ
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Everything you need to know about Money Collection Book.
+                Everything you need to know about this fundraising goal tracker.
               </p>
             </motion.div>
 
@@ -1124,10 +1124,10 @@ export default function FundraisingBookContent() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-              Stop Chasing. Start Collecting.
+              Download the Best Fundraising Tracker App
             </h2>
             <p className="text-primary-foreground/80 mb-8">
-              You have enough to manage already. Tracking who paid ₹500 for a birthday gift shouldn&apos;t be one of them.
+              The ultimate fundraising goal tracker and event planning budget tracker. Stop chasing payments — let Zedger handle it.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="https://play.google.com/store/apps/details?id=com.hitasoft.zedger" target="_blank" rel="noopener noreferrer" className="inline-block">
@@ -1154,7 +1154,7 @@ export default function FundraisingBookContent() {
               </a>
             </div>
             <p className="text-primary-foreground/60 mt-6 text-sm">
-              Free forever. No payment processing. Just simple tracking.
+              Free fundraising tracker app. No payment processing. Just simple goal tracking.
             </p>
           </motion.div>
         </div>

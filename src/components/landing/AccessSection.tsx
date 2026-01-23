@@ -15,7 +15,7 @@ const AccessSection = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              One app for all your<br />shared expenses
+              One group expense app<br />for all your shared expenses
             </h2>
           </motion.div>
 
@@ -27,7 +27,7 @@ const AccessSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-muted-foreground leading-relaxed">
-              From family budgets to trip expenses, roommate bills to fundraising — Zedger gives you the right book type for every situation. Create, share, and manage expenses together.
+              From family budgets to trip expenses, roommate bills to fundraising — Zedger is the best app for sharing expenses in every situation. Create, share, and manage expenses together.
             </p>
           </motion.div>
         </div>

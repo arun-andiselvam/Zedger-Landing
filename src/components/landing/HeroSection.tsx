@@ -17,10 +17,14 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-2xl lg:max-w-3xl"
           >
-            <h1 className="text-3xl md:text-4xl lg:text-[3.25rem] font-bold text-primary-foreground lg:leading-[50px] mb-8">
-              Not just expense splitting — shareable ledger books<br />
-              <span className="italic font-normal">for every part of your life.</span>
+            <h1 className="text-3xl md:text-4xl lg:text-[3.25rem] font-bold text-primary-foreground lg:leading-[50px] mb-4">
+              The Best Group Expense App — split bills with<br />
+              <span className="italic font-normal">friends, family & roommates.</span>
             </h1>
+
+            <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl">
+              Looking for the best app for sharing expenses? Zedger is the ultimate group expense tracker to track expenses with friends, family, and roommates.
+            </p>
 
             {/* App Store Buttons */}
             <div className="flex flex-wrap gap-4">
@@ -177,7 +181,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="mt-8 sm:mt-12"
         >
-          <p className="text-center text-primary-foreground/60 text-sm">Trusted by 50+ Companies</p>
+          <p className="text-center text-primary-foreground/60 text-sm">Trusted by 100+ users to split expenses with friends, family & roommates</p>
         </motion.div>
       </div>
     </section>

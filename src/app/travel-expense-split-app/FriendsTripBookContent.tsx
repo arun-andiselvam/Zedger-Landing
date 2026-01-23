@@ -373,9 +373,9 @@ export default function FriendsTripBookContent() {
         "Yes! Add expenses offline and they'll sync automatically when you're back online. Perfect for remote destinations.",
     },
     {
-      question: "How is this different from other expense splitting apps?",
+      question: "How is this different from other apps for bill splitting?",
       answer:
-        "Zedger is built specifically for trips with features like multi-currency, trip timeline, receipt photos, and smart settlements. It's not a generic splitter — it's a trip companion.",
+        "Zedger is a travel expense splitter built specifically for trips with features like multi-currency, trip timeline, receipt photos, and smart settlements. It's the best app for sharing expenses with friends on trips.",
     },
     {
       question: "Can I suggest features or report bugs?",
@@ -454,14 +454,14 @@ export default function FriendsTripBookContent() {
           >
             <motion.div variants={fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Meet Your New Travel Companion
+                The Ultimate App for Sharing Expenses with Friends
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                The Trip Book in{" "}
+                The{" "}
                 <Link href="/" className="text-primary font-medium hover:underline">
                   Zedger
                 </Link>{" "}
-                is a shared expense tracker designed specifically for group travel. It captures
+                travel expense splitter is designed specifically for group travel. It captures
                 every coffee, taxi, and temple entry ticket — then calculates exactly who owes
                 whom at the end.
               </p>
@@ -553,11 +553,11 @@ export default function FriendsTripBookContent() {
           >
             <motion.div variants={fadeInUp} className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Split It Your Way
+                One of the Best Apps for Bill Splitting
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Not everyone eats the same, drinks the same, or does the same activities.
-                Split expenses fairly with flexible options.
+                This travel expense splitter lets you split expenses fairly with flexible options.
               </p>
             </motion.div>
 
@@ -811,10 +811,10 @@ export default function FriendsTripBookContent() {
           >
             <motion.div variants={fadeInUp} className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Got Questions? We&apos;ve Got Answers
+                Travel Expense Splitter - FAQ
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Everything you need to know about using Trip Book for your next adventure.
+                Everything you need to know about using this app for sharing expenses with friends.
               </p>
             </motion.div>
 
@@ -862,11 +862,10 @@ export default function FriendsTripBookContent() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-              Pack Light. Track Smart.
+              Download the Best Travel Expense Splitter
             </h2>
             <p className="text-primary-foreground/80 mb-8">
-              Your next trip should be about the experiences, not the expense calculations.
-              Let Trip Book handle the numbers while you handle the memories.
+              The best app for sharing expenses with friends. One of the top apps for bill splitting on trips — let it handle the numbers while you handle the memories.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="https://play.google.com/store/apps/details?id=com.hitasoft.zedger" target="_blank" rel="noopener noreferrer" className="inline-block">
@@ -893,7 +892,7 @@ export default function FriendsTripBookContent() {
               </a>
             </div>
             <p className="text-primary-foreground/60 mt-6 text-sm">
-              Free to download. Free to use. No hidden costs (unlike that resort fee).
+              Free travel expense splitter. No hidden costs (unlike that resort fee).
             </p>
           </motion.div>
         </div>

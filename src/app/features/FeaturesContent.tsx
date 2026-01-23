@@ -67,38 +67,38 @@ export default function FeaturesContent() {
 
   const bookTypes = [
     {
-      title: "Family Book",
+      title: "Family Expense Tracker App",
       purpose: "Track household finances together",
       icon: Home,
       color: "bg-blue-100 text-blue-600",
-      link: "/family-book",
+      link: "/family-expense-tracker-app",
     },
     {
-      title: "Monthly Recurring",
+      title: "Bill Splitting App for Roommates",
       purpose: "Split rent, bills & regular expenses",
       icon: Calendar,
       color: "bg-green-100 text-green-600",
-      link: "/monthly-recurring-book",
+      link: "/bill-splitting-app-for-roommates",
     },
     {
-      title: "Trip Book",
+      title: "Travel Expense Splitter",
       purpose: "Manage travel expenses with friends",
       icon: Plane,
       color: "bg-orange-100 text-orange-600",
-      link: "/friends-trip-book",
+      link: "/travel-expense-split-app",
     },
     {
-      title: "Money Collection",
+      title: "Fundraising Tracker App",
       purpose: "Collect funds from groups",
       icon: Gift,
       color: "bg-purple-100 text-purple-600",
-      link: "/fundraising-book",
+      link: "/fundraising-tracker-app",
     },
   ];
 
   const bookTypeDetails = [
     {
-      title: "Family Book",
+      title: "Family Expense Tracker App",
       forText: "Families managing household finances together",
       capabilities: [
         "Track income, expenses, and transfers",
@@ -110,10 +110,10 @@ export default function FeaturesContent() {
       bestFor: ["Joint families", "Couples", "Parents & adult children", "Household budgeting"],
       icon: Home,
       color: "bg-blue-100 text-blue-600",
-      link: "/family-book",
+      link: "/family-expense-tracker-app",
     },
     {
-      title: "Monthly Recurring Book",
+      title: "Bill Splitting App for Roommates",
       forText: "People splitting regular shared expenses",
       capabilities: [
         "Monthly cycle-based tracking",
@@ -125,10 +125,10 @@ export default function FeaturesContent() {
       bestFor: ["Roommates", "Flatmates", "Couples sharing rent", "Shared households"],
       icon: Calendar,
       color: "bg-green-100 text-green-600",
-      link: "/monthly-recurring-book",
+      link: "/bill-splitting-app-for-roommates",
     },
     {
-      title: "Trip Book",
+      title: "Travel Expense Splitter",
       forText: "Groups traveling together",
       capabilities: [
         "Log expenses in real-time during trips",
@@ -140,10 +140,10 @@ export default function FeaturesContent() {
       bestFor: ["Friend trips", "Family vacations", "Office outings", "Destination events"],
       icon: Plane,
       color: "bg-orange-100 text-orange-600",
-      link: "/friends-trip-book",
+      link: "/travel-expense-split-app",
     },
     {
-      title: "Money Collection Book",
+      title: "Fundraising Tracker App",
       forText: "Collecting fixed amounts from groups",
       capabilities: [
         "Set target amounts",
@@ -155,7 +155,7 @@ export default function FeaturesContent() {
       bestFor: ["Birthday gifts", "Event funds", "Farewell collections", "Group purchases"],
       icon: Gift,
       color: "bg-purple-100 text-purple-600",
-      link: "/fundraising-book",
+      link: "/fundraising-tracker-app",
     },
   ];
 
@@ -534,7 +534,9 @@ export default function FeaturesContent() {
                     <div className="flex-1">
                       <div className="flex items-start justify-between mb-4">
                         <div>
-                          <h3 className="text-xl font-semibold text-gray-900 mb-1">{book.title}</h3>
+                          <Link href={book.link} className="hover:text-primary transition-colors">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-1 hover:text-primary">{book.title}</h3>
+                          </Link>
                           <p className="text-primary font-medium text-sm">For: {book.forText}</p>
                         </div>
                         <Link

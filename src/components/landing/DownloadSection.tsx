@@ -16,7 +16,7 @@ const DownloadSection = () => {
             transition={{ duration: 0.6 }}
             className="flex flex-col justify-center pt-16"
           >
-            <p className="text-primary-foreground/70 text-sm mb-1">Split expenses with ease</p>
+            <p className="text-primary-foreground/70 text-sm mb-1">The best group expense tracker app</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               Download Zedger<br />App today!
             </h2>

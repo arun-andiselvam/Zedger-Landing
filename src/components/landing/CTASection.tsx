@@ -79,7 +79,7 @@ const CTASection = () => {
             Everything you need to manage<br />shared expenses
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Powerful features designed to make expense tracking and splitting effortless for families, friends, and teams.
+            Powerful features that make Zedger the best app for shared expenses — effortless for families, friends, and teams.
           </p>
         </motion.div>
 
@@ -111,7 +111,7 @@ const CTASection = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-center text-sm text-muted-foreground mt-12"
         >
-          Zedger offers comprehensive expense management solutions for everyone.
+          Zedger is the best app for sharing expenses — comprehensive solutions for everyone.
         </motion.p>
       </div>
     </section>

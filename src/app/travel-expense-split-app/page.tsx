@@ -6,42 +6,43 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Friends Trip Book - Split Trip Costs Without Splitting Friendships",
+  title: "Best Travel Expense Splitter - App for Sharing Expenses with Friends | Zedger",
   description:
-    "Track and split travel expenses effortlessly with friends. From road trips to destination getaways, Zedger Trip Book handles the math so you can focus on making memories.",
+    "Zedger is the best travel expense splitter and app for sharing expenses with friends. One of the top apps for bill splitting on trips — track and split travel expenses effortlessly.",
   keywords: [
+    "travel expense splitter",
+    "app for sharing expenses with friends",
+    "apps for bill splitting",
     "split trip expenses",
     "travel expense tracker",
     "group trip spending",
     "friends trip calculator",
     "vacation expense splitter",
-    "road trip costs",
-    "travel money sharing",
     "trip expense app",
     "group travel budget",
   ],
   openGraph: {
-    title: "Friends Trip Book - Split Trip Costs Without Splitting Friendships | Zedger",
+    title: "Best Travel Expense Splitter - App for Sharing Expenses with Friends | Zedger",
     description:
-      "Track and split travel expenses effortlessly with friends. Handle the math so you can focus on making memories.",
-    url: "https://tryzedger.com/friends-trip-book",
+      "The best travel expense splitter and app for sharing expenses with friends. Split trip costs effortlessly.",
+    url: "https://tryzedger.com/travel-expense-split-app",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Zedger Friends Trip Book - Split Travel Expenses",
+        alt: "Zedger - Best Travel Expense Splitter",
       },
     ],
   },
   twitter: {
-    title: "Friends Trip Book - Split Trip Costs Without Splitting Friendships | Zedger",
+    title: "Best Travel Expense Splitter | Zedger",
     description:
-      "Track and split travel expenses effortlessly with friends. No more post-trip money drama.",
+      "The best app for sharing expenses with friends. One of the top apps for bill splitting on trips.",
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/friends-trip-book",
+    canonical: "https://tryzedger.com/travel-expense-split-app",
   },
 };
 
@@ -50,14 +51,14 @@ export default function FriendsTripBookPage() {
     <main className="min-h-screen overflow-hidden">
       <Header />
       <SubHeroSection
-        title="Split Trip Costs Without Splitting Friendships"
+        title="The Best Travel Expense Splitter for Friends"
         subtitle={
           <>
-            Group trips are amazing until it&apos;s time to split the bill. The{" "}
+            Looking for an app for sharing expenses with friends?{" "}
             <Link href="/" className="underline underline-offset-2 hover:text-primary-foreground">
               Zedger
             </Link>{" "}
-            Trip Book tracks every expense in real-time, so you can focus on creating memories instead of counting receipts.
+            is one of the best apps for bill splitting — a travel expense splitter that tracks every expense in real-time.
           </>
         }
       />

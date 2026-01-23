@@ -11,10 +11,10 @@ const Header = () => {
   const [useCasesOpen, setUseCasesOpen] = useState(false);
 
   const useCases = [
-    { href: "/family-book", label: "Family Book" },
-    { href: "/monthly-recurring-book", label: "Monthly Recurring Book" },
-    { href: "/friends-trip-book", label: "Friends Trip Book" },
-    { href: "/fundraising-book", label: "Fundraising Book" },
+    { href: "/family-expense-tracker-app", label: "Family Expense Tracker" },
+    { href: "/bill-splitting-app-for-roommates", label: "Bill Splitting for Roommates" },
+    { href: "/travel-expense-split-app", label: "Travel Expense Splitter" },
+    { href: "/fundraising-tracker-app", label: "Fundraising Tracker" },
   ];
 
   const navLinks = [
