@@ -19,7 +19,7 @@ const PricingContent = () => {
       features: [
         { name: "All 4 book types", included: true },
         { name: "Books per account", value: "4" },
-        { name: "Members per book", value: "5" },
+        { name: "Members per book", value: "10" },
         { name: "Expense entries", value: "Unlimited" },
         { name: "Expense history", value: "6 months" },
         { name: "Smart splitting", included: true },
@@ -43,8 +43,8 @@ const PricingContent = () => {
       cta: "Start Free Trial",
       features: [
         { name: "All 4 book types", included: true },
-        { name: "Books per account", value: "10" },
-        { name: "Members per book", value: "15" },
+        { name: "Books per account", value: "20" },
+        { name: "Members per book", value: "100" },
         { name: "Expense entries", value: "Unlimited" },
         { name: "Expense history", value: "Forever" },
         { name: "Smart splitting", included: true },
@@ -111,8 +111,8 @@ const PricingContent = () => {
     {
       title: "Book & Member Limits",
       features: [
-        { name: "Total books", free: "4", pro: "10", vip: "Unlimited" },
-        { name: "Members per book", free: "5", pro: "15", vip: "Unlimited" },
+        { name: "Total books", free: "4", pro: "20", vip: "Unlimited" },
+        { name: "Members per book", free: "10", pro: "100", vip: "Unlimited" },
         { name: "Pending invites", free: "5", pro: "20", vip: "Unlimited" },
       ],
     },

@@ -403,7 +403,7 @@ export default function FeaturesContent() {
     { feature: "All 4 book types", free: true, pro: true },
     { feature: "Expense tracking", free: true, pro: true },
     { feature: "Smart splitting", free: true, pro: true },
-    { feature: "Members per book", free: "Up to 5", pro: "Unlimited" },
+    { feature: "Members per book", free: "Up to 10", pro: "Unlimited" },
     { feature: "Books per account", free: "Up to 3", pro: "Unlimited" },
     { feature: "Expense history", free: "6 months", pro: "Forever" },
     { feature: "Export reports", free: "Basic", pro: "Advanced" },
