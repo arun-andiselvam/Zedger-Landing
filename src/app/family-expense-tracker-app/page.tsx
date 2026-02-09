@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Best Family Expense Tracker App - Track Family Expenses | Zedger",
     description:
       "Zedger is the best family expense tracker app. Track family expenses together with our free expense tracking app for family.",
-    url: "https://tryzedger.com/family-expense-tracker-app",
+    url: "https://www.tryzedger.com/family-expense-tracker-app",
     images: [
       {
         url: "/og-image.png",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/family-expense-tracker-app",
+    canonical: "https://www.tryzedger.com/family-expense-tracker-app",
   },
 };
 

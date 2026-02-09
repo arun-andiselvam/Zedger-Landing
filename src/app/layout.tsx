@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://tryzedger.com'),
+  metadataBase: new URL('https://www.tryzedger.com'),
   title: {
     default: 'Zedger - Best Group Expense App | Track & Share Expenses with Friends',
     template: '%s | Zedger',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://tryzedger.com',
+    url: 'https://www.tryzedger.com',
     siteName: 'Zedger',
     title: 'Zedger - Best Group Expense App | Track & Share Expenses with Friends',
     description:
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://tryzedger.com',
+    canonical: 'https://www.tryzedger.com',
   },
 };
 
@@ -79,12 +79,12 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': 'https://tryzedger.com/#organization',
+      '@id': 'https://www.tryzedger.com/#organization',
       name: 'Zedger',
-      url: 'https://tryzedger.com',
+      url: 'https://www.tryzedger.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tryzedger.com/images/logo.png',
+        url: 'https://www.tryzedger.com/images/logo.png',
       },
       sameAs: [
         'https://twitter.com/zedgerapp',
@@ -92,11 +92,11 @@ const jsonLd = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://tryzedger.com/#website',
-      url: 'https://tryzedger.com',
+      '@id': 'https://www.tryzedger.com/#website',
+      url: 'https://www.tryzedger.com',
       name: 'Zedger',
       publisher: {
-        '@id': 'https://tryzedger.com/#organization',
+        '@id': 'https://www.tryzedger.com/#organization',
       },
     },
     {

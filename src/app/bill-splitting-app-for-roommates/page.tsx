@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Best Bill Splitting App for Roommates | Zedger",
     description:
       "The best app to split bills with roommates. Automated bill splitting for rent, utilities, and shared subscriptions.",
-    url: "https://tryzedger.com/bill-splitting-app-for-roommates",
+    url: "https://www.tryzedger.com/bill-splitting-app-for-roommates",
     images: [
       {
         url: "/og-image.png",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/bill-splitting-app-for-roommates",
+    canonical: "https://www.tryzedger.com/bill-splitting-app-for-roommates",
   },
 };
 

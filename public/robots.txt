@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://tryzedger.com/sitemap.xml
+Sitemap: https://www.tryzedger.com/sitemap.xml

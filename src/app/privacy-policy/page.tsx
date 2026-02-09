@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy | Zedger",
     description:
       "Learn how Zedger collects, uses, and protects your personal information.",
-    url: "https://tryzedger.com/privacy-policy",
+    url: "https://www.tryzedger.com/privacy-policy",
     images: [
       {
         url: "/og-image.png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/privacy-policy",
+    canonical: "https://www.tryzedger.com/privacy-policy",
   },
 };
 

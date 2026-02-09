@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Terms and Conditions | Zedger",
     description:
       "Read the terms of service and usage policies for Zedger shared expense tracking app.",
-    url: "https://tryzedger.com/terms-and-conditions",
+    url: "https://www.tryzedger.com/terms-and-conditions",
     images: [
       {
         url: "/og-image.png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/terms-and-conditions",
+    canonical: "https://www.tryzedger.com/terms-and-conditions",
   },
 };
 
@@ -259,8 +259,8 @@ export default function TermsAndConditions() {
             <h2 className="text-xl font-semibold text-gray-800 mb-4">19. Privacy Policy</h2>
             <p className="text-gray-600">
               Your privacy is important to us. Please review our Privacy Policy at{" "}
-              <a href="https://tryzedger.com/privacy-policy" className="text-primary hover:underline">
-                https://tryzedger.com/privacy-policy
+              <a href="https://www.tryzedger.com/privacy-policy" className="text-primary hover:underline">
+                https://www.tryzedger.com/privacy-policy
               </a>{" "}
               to understand how we collect, use, and protect your information.
             </p>

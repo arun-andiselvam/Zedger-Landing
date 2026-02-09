@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Pricing - Fair Pricing for Real People | Zedger",
     description:
       "Start free, upgrade when you need more. No hidden fees, no surprise charges. Plans starting at $0/month.",
-    url: "https://tryzedger.com/pricing",
+    url: "https://www.tryzedger.com/pricing",
     images: [
       {
         url: "/og-image.png",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/pricing",
+    canonical: "https://www.tryzedger.com/pricing",
   },
 };
 

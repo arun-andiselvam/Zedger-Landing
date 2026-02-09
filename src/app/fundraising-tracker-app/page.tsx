@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Best Fundraising Tracker App - Fundraising Goal Tracker | Zedger",
     description:
       "The best fundraising tracker app for birthday gifts, farewell funds, and event contributions. Track your fundraising goal easily.",
-    url: "https://tryzedger.com/fundraising-tracker-app",
+    url: "https://www.tryzedger.com/fundraising-tracker-app",
     images: [
       {
         url: "/og-image.png",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/fundraising-tracker-app",
+    canonical: "https://www.tryzedger.com/fundraising-tracker-app",
   },
 };
 

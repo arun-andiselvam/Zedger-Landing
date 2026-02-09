@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Blog - Tips & Insights for Managing Shared Expenses | Zedger",
     description:
       "Read the latest articles on managing shared expenses and personal finance tips.",
-    url: "https://tryzedger.com/blog",
+    url: "https://www.tryzedger.com/blog",
     images: [
       {
         url: "/og-image.png",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/blog",
+    canonical: "https://www.tryzedger.com/blog",
   },
 };
 
@@ -50,13 +50,13 @@ const blogJsonLd = {
   "@type": "Blog",
   name: "Zedger Blog",
   description: "Tips and insights for managing shared expenses",
-  url: "https://tryzedger.com/blog",
+  url: "https://www.tryzedger.com/blog",
   publisher: {
     "@type": "Organization",
     name: "Zedger",
     logo: {
       "@type": "ImageObject",
-      url: "https://tryzedger.com/images/logo.png",
+      url: "https://www.tryzedger.com/images/logo.png",
     },
   },
 };

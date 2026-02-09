@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Best Travel Expense Splitter - App for Sharing Expenses with Friends | Zedger",
     description:
       "The best travel expense splitter and app for sharing expenses with friends. Split trip costs effortlessly.",
-    url: "https://tryzedger.com/travel-expense-split-app",
+    url: "https://www.tryzedger.com/travel-expense-split-app",
     images: [
       {
         url: "/og-image.png",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/travel-expense-split-app",
+    canonical: "https://www.tryzedger.com/travel-expense-split-app",
   },
 };
 

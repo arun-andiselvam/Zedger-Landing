@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Delete Account | Zedger",
     description:
       "Request to delete your Zedger account and all associated data.",
-    url: "https://tryzedger.com/delete-account",
+    url: "https://www.tryzedger.com/delete-account",
     images: [
       {
         url: "/og-image.png",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/delete-account",
+    canonical: "https://www.tryzedger.com/delete-account",
   },
 };
 

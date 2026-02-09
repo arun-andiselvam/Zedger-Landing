@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${post.title} | Zedger Blog`,
       description: post.description,
-      url: `https://tryzedger.com/blog/${slug}`,
+      url: `https://www.tryzedger.com/blog/${slug}`,
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [post.coverImage || "/og-image.png"],
     },
     alternates: {
-      canonical: `https://tryzedger.com/blog/${slug}`,
+      canonical: `https://www.tryzedger.com/blog/${slug}`,
     },
   };
 }
@@ -78,7 +78,7 @@ export default async function BlogPostPage({ params }: Props) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
-    image: post.coverImage || "https://tryzedger.com/og-image.png",
+    image: post.coverImage || "https://www.tryzedger.com/og-image.png",
     datePublished: post.date,
     dateModified: post.date,
     author: {
@@ -90,12 +90,12 @@ export default async function BlogPostPage({ params }: Props) {
       name: "Zedger",
       logo: {
         "@type": "ImageObject",
-        url: "https://tryzedger.com/images/logo.png",
+        url: "https://www.tryzedger.com/images/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://tryzedger.com/blog/${slug}`,
+      "@id": `https://www.tryzedger.com/blog/${slug}`,
     },
     keywords: post.tags.join(", "),
   };

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Features - Everything You Need for Shared Money Management | Zedger",
     description:
       "Discover all Zedger features for families, roommates, travelers, and groups. Track, split, and settle expenses effortlessly.",
-    url: "https://tryzedger.com/features",
+    url: "https://www.tryzedger.com/features",
     images: [
       {
         url: "/og-image.png",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/features",
+    canonical: "https://www.tryzedger.com/features",
   },
 };
 

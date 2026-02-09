@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Contact Us | Zedger",
     description:
       "Get in touch with the Zedger team. We'd love to hear from you.",
-    url: "https://tryzedger.com/contact",
+    url: "https://www.tryzedger.com/contact",
     images: [
       {
         url: "/og-image.png",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://tryzedger.com/contact",
+    canonical: "https://www.tryzedger.com/contact",
   },
 };
 
@@ -45,12 +45,12 @@ const contactJsonLd = {
   "@type": "ContactPage",
   name: "Contact Zedger",
   description: "Get in touch with the Zedger team for questions, feedback, or support.",
-  url: "https://tryzedger.com/contact",
+  url: "https://www.tryzedger.com/contact",
   mainEntity: {
     "@type": "Organization",
     name: "Zedger",
     email: "support@tryzedger.com",
-    url: "https://tryzedger.com",
+    url: "https://www.tryzedger.com",
   },
 };
 

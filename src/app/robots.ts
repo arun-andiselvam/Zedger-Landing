@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://tryzedger.com/sitemap.xml',
+    sitemap: 'https://www.tryzedger.com/sitemap.xml',
   };
 }
