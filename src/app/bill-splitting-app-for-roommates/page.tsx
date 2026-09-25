@@ -52,14 +52,13 @@ export default function MonthlyRecurringBookPage() {
     <main className="min-h-screen overflow-hidden">
       <Header />
       <SubHeroSection
-        title="The Best Bill Splitting App for Roommates"
+        title="The Best Utility Bill Splitting App for Roommates"
         subtitle={
           <>
-            Looking for an app to split bills with roommates?{" "}
             <Link href="/" className="underline underline-offset-2 hover:text-primary-foreground">
               Zedger
             </Link>{" "}
-            is the ultimate roommate bill splitter — an automated bill splitting app that tracks rent, utilities, and shared subscriptions.
+            is the utility bill splitting app for roommates — split electricity, WiFi, gas, water, and rent without the spreadsheet. The ultimate roommate bill splitter for everything you share.
           </>
         }
       />

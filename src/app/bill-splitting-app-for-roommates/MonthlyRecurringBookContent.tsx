@@ -15,7 +15,11 @@ import {
   PlusCircle,
   Wallet,
   History,
-  Clock
+  Clock,
+  Zap,
+  Wifi,
+  Flame,
+  Droplet
 } from "lucide-react";
 import Link from "next/link";
 
@@ -111,6 +115,55 @@ const MonthlyRecurringBookContent = () => {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mt-16"
+          >
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 text-center">
+              Split Every Utility Bill: Electricity, WiFi, Gas, and Water
+            </h3>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-center mb-8">
+              Utilities are the bills roommates argue about most, because they change every month and one person usually pays the whole thing upfront. Log each one as its own expense so everyone sees exactly what they owe for it.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+              {[
+                { icon: Zap, title: "Electricity", desc: "Split equally, or exclude whoever was away that month." },
+                { icon: Wifi, title: "WiFi & Internet", desc: "Same amount every month — an equal split is usually fairest." },
+                { icon: Flame, title: "Gas", desc: "Heating and cooking gas, split by the ratio your flat agrees on." },
+                { icon: Droplet, title: "Water", desc: "Log it when the bill arrives, split among everyone living there." }
+              ].map((u) => (
+                <div key={u.title} className="bg-white rounded-xl p-4 shadow-sm">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                    <u.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h4 className="font-bold text-foreground text-sm mb-1">{u.title}</h4>
+                  <p className="text-muted-foreground text-xs">{u.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-sm max-w-3xl mx-auto">
+              <h4 className="font-bold text-foreground mb-4">Example: splitting a $120 electricity bill</h4>
+              <ol className="space-y-3">
+                {[
+                  'Priya pays the $120 electricity bill and adds it to your roommates’ book as "Electricity – March".',
+                  "Rahul was away for two weeks, so she excludes him and splits it equally between herself and Amit.",
+                  "Balances update instantly: Amit owes Priya $60. Nobody touches a calculator.",
+                  "At month end, Amit settles up and marks it as paid. The next cycle starts fresh."
+                ].map((step, index) => (
+                  <li key={index} className="flex gap-3 text-muted-foreground text-sm">
+                    <span className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">
+                      {index + 1}
+                    </span>
+                    {step}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -315,6 +368,7 @@ const MonthlyRecurringBookContent = () => {
                 </h3>
                 <ul className="space-y-2">
                   {[
+                    "Edit or delete any expense, including ones added by other members",
                     "Remove members",
                     "Close or delete the book",
                     "Adjust member permissions"
@@ -468,6 +522,9 @@ const MonthlyRecurringBookContent = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               Your Complete Apartment Expense Ledger
             </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+              Everything you expect from a utility bill splitting app, plus rent, groceries, and shared subscriptions in one place.
+            </p>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -532,6 +589,10 @@ const MonthlyRecurringBookContent = () => {
               {
                 q: "What does \"monthly cycle\" mean?",
                 a: "A cycle is your expense tracking period — usually a month. At the start of each cycle, balances reset to zero. As expenses are logged, the app tracks who paid and who owes. At cycle end, you settle up and start fresh."
+              },
+              {
+                q: "Can I split just the utility bills, not rent?",
+                a: "Yes. You only log the expenses you want to share. Many roommates track just electricity, WiFi, gas, and water and handle rent separately. Others add rent with its own split (by room size, for example) while utilities split equally. Each expense has its own split, so you can mix both."
               },
               {
                 q: "Can I customize when my cycle starts?",
@@ -639,7 +700,7 @@ const MonthlyRecurringBookContent = () => {
               },
               {
                 q: "Is this bill splitting app for roommates free?",
-                a: "Yes, this roommate bill splitter is free with all core features. Pro unlocks unlimited members, advanced analytics, and priority support — making it the best app to split bills with roommates for larger households."
+                a: "Yes. The free plan has no daily or monthly cap on expenses, so you can log every bill without hitting a wall. It includes all split options, 6 months of history, and occasional ads. Pro ($1/month) adds more books and members, full history, recurring expenses, multi-currency, exports, and no ads. See the pricing page for exact limits."
               }
             ].map((item, index) => (
               <motion.div
@@ -684,7 +745,7 @@ const MonthlyRecurringBookContent = () => {
               Download the Best Bill Splitting App for Roommates
             </h2>
             <p className="text-primary-foreground/80 mb-2">
-              Stop chasing payments. This automated bill splitting app handles rent, utilities, and shared subscriptions effortlessly.
+              Stop chasing payments. This utility bill splitting app handles rent, electricity, WiFi, and shared subscriptions effortlessly.
             </p>
             <p className="text-primary-foreground font-medium mb-8">
               The ultimate shared subscription tracker for roommates.
