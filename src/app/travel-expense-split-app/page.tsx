@@ -49,16 +49,16 @@ export const metadata: Metadata = {
 export default function FriendsTripBookPage() {
   return (
     <main className="min-h-screen overflow-hidden">
-      <Header />
+      <Header logoAlt="Zedger trip splitter app logo" />
       <SubHeroSection
-        title="The Best Travel Expense Splitter for Friends"
+        title="Zedger: The Best Trip Splitter for Friends"
         subtitle={
           <>
-            Looking for an app for sharing expenses with friends?{" "}
+            The trip splitter that tracks every shared expense in real-time. Looking for an app for sharing expenses with friends?{" "}
             <Link href="/" className="underline underline-offset-2 hover:text-primary-foreground">
               Zedger
             </Link>{" "}
-            is one of the best apps for bill splitting — a travel expense splitter that tracks every expense in real-time.
+            is one of the best apps for bill splitting — a travel expense splitter built for group trips.
           </>
         }
       />

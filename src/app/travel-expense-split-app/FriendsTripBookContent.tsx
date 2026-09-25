@@ -263,6 +263,11 @@ export default function FriendsTripBookContent() {
 
   const faqItems = [
     {
+      question: "Is Zedger a good trip splitter for friends?",
+      answer:
+        "Yes. Zedger is a trip splitter built for group travel: everyone logs expenses in a shared Trip Book, it handles unequal splits and multiple currencies, and it suggests the fewest payments needed to settle up when the trip ends.",
+    },
+    {
       question: "Is the Trip Book free to use?",
       answer:
         "Yes! Creating trip books and tracking expenses is completely free. We believe managing money with friends shouldn't cost money.",
@@ -454,7 +459,7 @@ export default function FriendsTripBookContent() {
           >
             <motion.div variants={fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                The Ultimate App for Sharing Expenses with Friends
+                The Ultimate Trip Splitter for Sharing Expenses with Friends
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 The{" "}
@@ -511,8 +516,8 @@ export default function FriendsTripBookContent() {
                 Adventure First, Math Later
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Four simple steps to expense-tracking bliss. Set it up once, and the Trip Book
-                does the heavy lifting.
+                Four simple steps to expense-tracking bliss. Set up your trip splitter once, and
+                the Trip Book does the heavy lifting.
               </p>
             </motion.div>
 
@@ -865,7 +870,7 @@ export default function FriendsTripBookContent() {
               Download the Best Travel Expense Splitter
             </h2>
             <p className="text-primary-foreground/80 mb-8">
-              The best app for sharing expenses with friends. One of the top apps for bill splitting on trips — let it handle the numbers while you handle the memories.
+              The best app for travel expenses with friends. One of the top apps for bill splitting on trips — let it handle the numbers while you handle the memories.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="https://play.google.com/store/apps/details?id=com.hitasoft.zedger" target="_blank" rel="noopener noreferrer" className="inline-block">

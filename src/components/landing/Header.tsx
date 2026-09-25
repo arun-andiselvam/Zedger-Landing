@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({ logoAlt = "Zedger Logo" }: { logoAlt?: string }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [useCasesOpen, setUseCasesOpen] = useState(false);
 
@@ -37,7 +37,7 @@ const Header = () => {
           <Link href="/" className="md:absolute md:left-0 flex items-center gap-2 h-full">
             <Image
               src="/images/logo.png"
-              alt="Zedger Logo"
+              alt={logoAlt}
               width={44}
               height={44}
               className="rounded-full"
