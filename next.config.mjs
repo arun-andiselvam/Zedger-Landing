@@ -16,6 +16,11 @@ const nextConfig = {
         destination: '/blog/free-group-trip-expense-splitter',
         permanent: true,
       },
+      {
+        source: '/blog/how-to-split-bills-with-roommates-without-drama',
+        destination: '/blog/split-bills-with-roommates',
+        permanent: true,
+      },
     ];
   },
 };
