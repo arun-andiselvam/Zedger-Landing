@@ -6,9 +6,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Bill Splitting App for Roommates - Split Rent & Utilities | Zedger",
+  title: "Bill Splitting App for Roommates - Split Rent & Utilities",
   description:
-    "Zedger is the best bill splitting app for roommates. An automated bill splitting app to split bills with roommates, track rent and utilities, and manage shared subscriptions. The ultimate roommate bill splitter.",
+    "Split rent, utilities and recurring bills with roommates in one shared Book. No bank linking, works offline. Free plan available - download Zedger today.",
   keywords: [
     "bill splitting app for roommates",
     "app to split bills with roommates",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Best Bill Splitting App for Roommates | Zedger",
     description:
       "The best app to split bills with roommates. Automated bill splitting for rent, utilities, and shared subscriptions.",
-    url: "https://www.tryzedger.com/bill-splitting-app-for-roommates",
+    url: "https://www.tryzedger.com/bill-splitting-app-roommates",
     images: [
       {
         url: "/og-image.png",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://www.tryzedger.com/bill-splitting-app-for-roommates",
+    canonical: "https://www.tryzedger.com/bill-splitting-app-roommates",
   },
 };
 
@@ -58,7 +58,7 @@ export default function MonthlyRecurringBookPage() {
             <Link href="/" className="underline underline-offset-2 hover:text-primary-foreground">
               Zedger
             </Link>{" "}
-            is the utility bill splitting app for roommates — split electricity, WiFi, gas, water, and rent without the spreadsheet. The ultimate roommate bill splitter for everything you share.
+            is the bill splitting app for roommates. Whether you want a splitting bill app, an app for bill splitting, or one of the apps for splitting bills with flatmates, Zedger is the app for splitting the bill on electricity, WiFi, gas, water, and rent — no spreadsheet needed.
           </>
         }
       />

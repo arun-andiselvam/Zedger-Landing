@@ -78,7 +78,7 @@ export default function FeaturesContent() {
       purpose: "Split rent, bills & regular expenses",
       icon: Calendar,
       color: "bg-green-100 text-green-600",
-      link: "/bill-splitting-app-for-roommates",
+      link: "/bill-splitting-app-roommates",
     },
     {
       title: "Travel Expense Splitter",
@@ -125,7 +125,7 @@ export default function FeaturesContent() {
       bestFor: ["Roommates", "Flatmates", "Couples sharing rent", "Shared households"],
       icon: Calendar,
       color: "bg-green-100 text-green-600",
-      link: "/bill-splitting-app-for-roommates",
+      link: "/bill-splitting-app-roommates",
     },
     {
       title: "Travel Expense Splitter",

@@ -17,7 +17,7 @@ const bookTypes = [
     description: "Split rent, utilities, and shared subscriptions effortlessly. The ultimate roommate bill splitter.",
     icon: Calendar,
     color: "bg-green-100 text-green-600",
-    link: "/bill-splitting-app-for-roommates",
+    link: "/bill-splitting-app-roommates",
   },
   {
     title: "Travel Expense Splitter",

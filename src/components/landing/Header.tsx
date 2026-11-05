@@ -12,7 +12,7 @@ const Header = ({ logoAlt = "Zedger Logo" }: { logoAlt?: string }) => {
 
   const useCases = [
     { href: "/family-expense-tracker-app", label: "Family Expense Tracker" },
-    { href: "/bill-splitting-app-for-roommates", label: "Bill Splitting for Roommates" },
+    { href: "/bill-splitting-app-roommates", label: "Bill Splitting for Roommates" },
     { href: "/travel-expense-split-app", label: "Travel Expense Splitter" },
     { href: "/fundraising-tracker-app", label: "Fundraising Tracker" },
   ];

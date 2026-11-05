@@ -21,6 +21,11 @@ const nextConfig = {
         destination: '/blog/split-bills-with-roommates',
         permanent: true,
       },
+      {
+        source: '/bill-splitting-app-for-roommates',
+        destination: '/bill-splitting-app-roommates',
+        permanent: true,
+      },
     ];
   },
 };

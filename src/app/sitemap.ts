@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/bill-splitting-app-for-roommates`,
+      url: `${baseUrl}/bill-splitting-app-roommates`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,

@@ -67,7 +67,7 @@ const MonthlyRecurringBookContent = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-center text-muted-foreground mt-8 text-lg"
           >
-            Shared living is great. Shared expenses? A nightmare. <span className="text-foreground font-medium">Until now.</span>
+            Shared living is great. Shared expenses? A nightmare. <span className="text-foreground font-medium">Until now.</span> Want the full playbook first? Read <Link href="/blog/split-bills-with-roommates" className="text-primary underline">how to split bills with roommates without drama</Link>.
           </motion.p>
         </div>
       </section>
@@ -577,6 +577,26 @@ const MonthlyRecurringBookContent = () => {
               {
                 q: "What is a bill splitting app for roommates?",
                 a: "A bill splitting app for roommates like Zedger is a shared expense tracker designed for people who split regular costs — like rent, utilities, groceries, or WiFi. This automated bill splitting app calculates who owes what at the end of each month, so you don't have to."
+              },
+              {
+                q: "Is Zedger an app for splitting costs, not just bills?",
+                a: (
+                  <>
+                    Yes. Zedger is an app for splitting costs of any kind: rent, utilities, groceries, subscriptions, or a one-off purchase. Each expense gets its own split, equal, percentage, or custom. Comparing options? See our guide to the <Link href="/blog/best-roommate-expense-tracker-apps" className="text-primary underline">best roommate expense tracker apps</Link>.
+                  </>
+                )
+              },
+              {
+                q: "Is there a bill splitting app for iPhone?",
+                a: "Yes. Zedger is a bill splitting app for iPhone, free to download from the App Store. You and your roommates get the same shared Book on iOS and Android."
+              },
+              {
+                q: "Is there a bill splitting app for Android?",
+                a: "Yes. Zedger is a bill splitting app for Android, free to download from Google Play. Roommates on iPhone can join the same Book."
+              },
+              {
+                q: "Is there a bill splitting app for roommates in the UK?",
+                a: "Yes. Zedger works in the UK and anywhere else. It never links to your bank, so there's nothing region-specific to set up. Log rent and bills in pounds, split them any way you like, and settle by bank transfer or however you already pay. Pro adds multi-currency if your household mixes currencies."
               },
               {
                 q: "Who is this for?",
