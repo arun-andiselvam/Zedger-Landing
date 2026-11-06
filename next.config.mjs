@@ -27,6 +27,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/how-to-split-bills-with-friends-methods-that-keep-peace',
+        destination: '/blog/how-to-split-bills-with-friends',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
