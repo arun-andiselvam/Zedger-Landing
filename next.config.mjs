@@ -22,6 +22,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/best-bill-splitting-apps-for-couples-managing-shared-expenses-together',
+        destination: '/blog/bill-splitting-app-for-couples',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
