@@ -32,6 +32,21 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/best-expense-splitting-apps-india',
+        destination: '/blog/best-free-expense-splitting-apps-india',
+        permanent: true,
+      },
+      {
+        source: '/blog/ultimate-grade-to-find-your-best-app-for-splitting-trip-expenses',
+        destination: '/blog/ultimate-guide-to-find-your-best-app-for-splitting-trip-expenses',
+        permanent: true,
+      },
+      {
+        source: '/bill-splitting-app-for-rommates',
+        destination: '/bill-splitting-app-roommates',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
