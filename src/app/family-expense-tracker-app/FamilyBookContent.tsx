@@ -124,7 +124,7 @@ const FamilyBookContent = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              A Family Expense Manager App Built for Real Families
+              A Family Expense Manager and Family Budgeting App Built for Real Families
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Call it a family budgeting app or a household budget tracker app: it keeps everyone looking at the same numbers.
@@ -191,7 +191,7 @@ const FamilyBookContent = () => {
               Real Families. Real Peace of Mind.
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A family finance app for India and beyond, from Mumbai and Bangalore to Singapore.
+              A family finance app India can rely on, from Mumbai and Bangalore to Singapore.
             </p>
           </motion.div>
 
