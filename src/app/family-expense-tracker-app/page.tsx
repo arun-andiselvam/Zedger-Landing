@@ -6,9 +6,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Family Expense Tracker App - Track Family Expenses Together | Zedger",
+  title: "Family Expense Tracker App - Track Together | Zedger",
   description:
-    "Zedger is the best family expense tracker app to track family expenses together. Free expense tracking app for family with shared ledger books. The ultimate family expense manager app.",
+    "Track family spending together with separate Family Books, no bank linking, and offline support. Free plan available - start tracking in minutes.",
   keywords: [
     "family expense tracker app",
     "family expense tracker",
@@ -55,7 +55,7 @@ export default function FamilyBookPage() {
         title="The Best Family Expense Tracker App"
         subtitle={
           <>
-            Looking for an app to track family expenses?{" "}
+            Looking for a family expense tracker app to track family expenses together?{" "}
             <Link href="/" className="underline underline-offset-2 hover:text-primary-foreground">
               Zedger
             </Link>{" "}

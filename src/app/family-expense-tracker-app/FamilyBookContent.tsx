@@ -20,6 +20,11 @@ const FamilyBookContent = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               The Money Conversations Nobody Wants to Have
             </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              They start at home, and they start early. Our guide to{" "}
+              <Link href="/blog/teaching-kids-money-management" className="text-primary underline underline-offset-2 hover:text-primary/80">teaching kids about money</Link>{" "}
+              shows how to bring the whole family into the conversation.
+            </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -67,7 +72,7 @@ const FamilyBookContent = () => {
               One Family Expense Tracker. Every Penny. Zero Arguments.
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              The best expense tracking app for family from <Link href="/" className="text-primary underline underline-offset-2 hover:text-primary/80">Zedger</Link> — trusted by thousands of households
+              The best expense tracking app for family from <Link href="/" className="text-primary underline underline-offset-2 hover:text-primary/80">Zedger</Link> — a household expense tracker trusted by thousands of households
             </p>
           </motion.div>
 
@@ -121,6 +126,9 @@ const FamilyBookContent = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               A Family Expense Manager App Built for Real Families
             </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Call it a family budgeting app or a household budget tracker app: it keeps everyone looking at the same numbers.
+            </p>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 gap-6">
@@ -182,6 +190,9 @@ const FamilyBookContent = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               Real Families. Real Peace of Mind.
             </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              A family finance app for India and beyond, from Mumbai and Bangalore to Singapore.
+            </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -276,7 +287,7 @@ const FamilyBookContent = () => {
               Not a Budget App. The Best Family Expense Tracker App.
             </h2>
             <p className="text-muted-foreground">
-              <Link href="/" className="text-primary underline underline-offset-2 hover:text-primary/80">Zedger</Link> is an expense tracking app for family — a different category entirely.
+              <Link href="/" className="text-primary underline underline-offset-2 hover:text-primary/80">Zedger</Link> is an expense tracking app for family — a different category entirely. It's also an app to split family expenses fairly: log who paid and see who owes what.
             </p>
           </motion.div>
 
@@ -336,6 +347,10 @@ const FamilyBookContent = () => {
               {
                 q: "How is this different from other expense tracking apps for family?",
                 a: "Most expense tracking apps for family focus on individual tracking. Zedger's Family Book is built for shared household money. Multiple family members can add entries, view balances, and track where the household money is going — together."
+              },
+              {
+                q: "How do I track shared family expenses?",
+                a: "Create a Family Book, invite your family members, and let everyone log what they spend. You can track shared family expenses together in one place, with every entry marked as Cash or Bank, and no bank linking needed."
               },
               {
                 q: "Who can see the entries I add?",
@@ -456,7 +471,7 @@ const FamilyBookContent = () => {
               Download the Best Family Expense Tracker App Free
             </h2>
             <p className="text-primary-foreground/80 mb-8">
-              Join 10,000+ families using <Link href="/" className="underline underline-offset-2 hover:text-primary-foreground">Zedger</Link> — the family expense tracker app free for everyone
+              Join 10,000+ families using <Link href="/" className="underline underline-offset-2 hover:text-primary-foreground">Zedger</Link> — the family expense tracker app free for everyone, and a simple family money management app for the whole household
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="https://play.google.com/store/apps/details?id=com.hitasoft.zedger" target="_blank" rel="noopener noreferrer" className="inline-block">
