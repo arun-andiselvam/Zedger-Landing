@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Family Expense Tracker App - Track Together | Zedger",
+  title: "Family Expense Tracker App - Track Together",
   description:
     "Track family spending together with separate Family Books, no bank linking, and offline support. Free plan available - start tracking in minutes.",
   keywords: [

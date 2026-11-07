@@ -287,7 +287,7 @@ const FamilyBookContent = () => {
               Not a Budget App. The Best Family Expense Tracker App.
             </h2>
             <p className="text-muted-foreground">
-              <Link href="/" className="text-primary underline underline-offset-2 hover:text-primary/80">Zedger</Link> is an expense tracking app for family — a different category entirely. It's also an app to split family expenses fairly: log who paid and see who owes what.
+              <Link href="/" className="text-primary underline underline-offset-2 hover:text-primary/80">Zedger</Link> is an expense tracking app for family — a different category entirely. It&apos;s also an app to split family expenses fairly: log who paid and see who owes what.
             </p>
           </motion.div>
 
