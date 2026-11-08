@@ -57,6 +57,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/what-is-the-best-family-budgeting-app-5-options-ranked',
+        destination: '/blog/best-family-budgeting-app',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
