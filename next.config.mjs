@@ -62,6 +62,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/how-to-track-household-expenses-a-simple-beginner-guide',
+        destination: '/blog/how-to-track-household-expenses',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
