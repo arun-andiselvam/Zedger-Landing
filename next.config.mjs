@@ -72,6 +72,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/shared-expense-tracker-app-a-guide-for-families-and-roommates',
+        destination: '/blog/shared-expense-tracker-app',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
