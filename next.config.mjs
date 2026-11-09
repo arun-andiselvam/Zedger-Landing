@@ -82,6 +82,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/what-are-some-budgeting-apps-a-family-comparison',
+        destination: '/blog/what-are-some-budgeting-apps',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
