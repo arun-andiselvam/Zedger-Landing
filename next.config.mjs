@@ -87,6 +87,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/how-to-split-household-bills-fairly-methods-and-examples',
+        destination: '/blog/how-to-split-household-bills',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
