@@ -67,7 +67,7 @@ const MonthlyRecurringBookContent = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-center text-muted-foreground mt-8 text-lg"
           >
-            Shared living is great. Shared expenses? A nightmare. <span className="text-foreground font-medium">Until now.</span> Want the full playbook first? Read <Link href="/blog/split-bills-with-roommates" className="text-primary underline">how to split bills with roommates without drama</Link>.
+            Shared living is great. Shared expenses? A nightmare. <span className="text-foreground font-medium">Until now.</span> Want the full playbook first? Read <Link href="/blog/how-to-split-bills-with-roommates" className="text-primary underline">how to split bills with roommates without drama</Link>.
           </motion.p>
         </div>
       </section>

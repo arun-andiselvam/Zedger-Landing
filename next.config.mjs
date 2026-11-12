@@ -18,7 +18,12 @@ const nextConfig = {
       },
       {
         source: '/blog/how-to-split-bills-with-roommates-without-drama',
-        destination: '/blog/split-bills-with-roommates',
+        destination: '/blog/how-to-split-bills-with-roommates',
+        permanent: true,
+      },
+      {
+        source: '/blog/split-bills-with-roommates',
+        destination: '/blog/how-to-split-bills-with-roommates',
         permanent: true,
       },
       {
