@@ -147,6 +147,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/what-to-do-when-someone-refuses-to-pay-their-share-back',
+        destination: '/blog/someone-refuses-to-pay-share-back',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
