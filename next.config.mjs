@@ -107,6 +107,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/how-to-settle-up-after-a-trip-without-the-awkward-part',
+        destination: '/blog/how-to-settle-up-after-a-trip',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
