@@ -152,6 +152,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/who-pays-first-in-group-trip-expenses-a-fair-split-guide',
+        destination: '/blog/who-pays-first-group-trip-expenses',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
