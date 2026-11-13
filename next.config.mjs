@@ -127,6 +127,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/group-trip-expense-splitting-etiquette-and-rules-explained',
+        destination: '/blog/group-trip-expense-splitting-etiquette',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
