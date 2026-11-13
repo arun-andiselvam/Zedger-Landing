@@ -132,6 +132,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/how-to-split-trip-expenses-fairly-between-couples',
+        destination: '/blog/split-trip-expenses-between-couples',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
