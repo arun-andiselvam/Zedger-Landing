@@ -10,6 +10,21 @@ import remarkGfm from "remark-gfm";
 import Script from "next/script";
 import { CallToAction } from "@/components/CallToAction";
 
+function BlogImage({ src, alt }: { src?: string; alt?: string }) {
+  if (!src) return null;
+  return (
+    <Image
+      src={src}
+      alt={alt ?? ""}
+      width={1200}
+      height={800}
+      sizes="(min-width: 768px) 768px, 100vw"
+      loading="lazy"
+      style={{ width: "100%", height: "auto" }}
+    />
+  );
+}
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -177,6 +192,7 @@ export default async function BlogPostPage({ params }: Props) {
                 alt={post.title}
                 fill
                 className="object-cover"
+                sizes="(min-width: 1024px) 896px, 100vw"
                 priority
               />
             </div>
@@ -184,7 +200,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Content */}
           <div className="prose prose-base max-w-none prose-p:leading-relaxed prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-strong:text-foreground prose-code:text-primary prose-code:bg-coca-gray-light prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-li:text-muted-foreground overflow-x-auto">
-            <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} components={{ CallToAction }} />
+            <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} components={{ CallToAction, img: BlogImage }} />
           </div>
 
           {/* Tags */}

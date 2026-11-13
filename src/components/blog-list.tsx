@@ -68,6 +68,7 @@ export default function BlogList({ page }: { page: number }) {
                             alt={post.title}
                             fill
                             className="object-cover"
+                            sizes="(min-width: 1024px) 384px, (min-width: 768px) 50vw, 100vw"
                           />
                         </div>
                       </Link>
