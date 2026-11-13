@@ -142,6 +142,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/travel-expense-splitting-for-destination-weddings-and-events',
+        destination: '/blog/travel-expense-splitting-destination-weddings',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
