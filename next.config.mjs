@@ -122,6 +122,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/calculating-trip-expenses-per-person-spreadsheet-free-template',
+        destination: '/blog/trip-expenses-per-person-spreadsheet',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
