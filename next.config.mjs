@@ -102,6 +102,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/how-to-calculate-trip-cost-per-person-with-examples',
+        destination: '/blog/how-to-calculate-trip-cost-per-person',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
