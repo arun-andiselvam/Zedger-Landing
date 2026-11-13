@@ -117,6 +117,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/how-to-reimburse-someone-after-a-group-trip-fairly',
+        destination: '/blog/how-to-reimburse-someone-after-a-group-trip',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
