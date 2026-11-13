@@ -112,6 +112,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/how-to-split-airbnb-costs-among-roommates-on-a-trip-fairly',
+        destination: '/blog/how-to-split-airbnb-costs-among-roommates',
+        permanent: true,
+      },
+      {
         source: '/bill-splitting-app-for-roommates',
         destination: '/bill-splitting-app-roommates',
         permanent: true,
